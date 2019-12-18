@@ -1,0 +1,114 @@
+/* Sergio Barrio de la Vega*/
+
+/*Ej1*/
+#tablaDeMultiplicar {
+  border-collapse: collapse;
+}
+
+#tablaDeMultiplicar tr:nth-child(odd){
+  background-color: grey;
+}
+#tablaDeMultiplicar td {
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+
+}
+
+#tablaDeMultiplicar td:hover{
+  background-color: #d9d9d9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#tablaDeMultiplicar #primeraFila {
+  background-color: transparent;
+}
+#primeraFila #celdaVacia {
+  background-color: transparent;
+  border: 0px;
+}
+
+.captionTablas {
+  font-size: 50px;
+}
+
+.filaEj1 {
+  font-size: 20px;
+  background-color: #fbfbfb;
+}
+
+#tablaDeMultiplicar th {
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  background-color: #3b3bff;
+  color: white;
+  font-size: 25px;
+}
+
+
+.numeroFilaEj1 {
+  background-color: orange;
+  font-size: 25px;
+  font-weight: bold;
+}
+/*Fin Ej1*/
+
+
+
+/* EJ2 */
+#talblaEj2 {
+border: 1px solid black;
+background-color: white;
+}
+
+#talblaEj2 td{
+  border: 1px solid black;
+}
+/*Fin Ej2*/
+
+/*Ej3*/
+body {
+  background-color: #c8e0ec;
+}
+.parrafoEj3{
+  font-family: arial;
+}
+#tituloEj3 {
+  text-decoration: underline;
+  text-align: center;
+  font-family: arial;
+  font-size: 40px;
+}
+.subtituloEj3 {
+  background-color: #409abf;
+  font-family: arial, sans-serif;
+  font-size: 25px;
+}
+#parrafoAntesDeCitaEj3 {
+  margin-bottom: 0;
+}
+#preCitaEj3{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#citaEj3{
+  margin: 10px;
+  font-family: arial, sans-serif;
+}
+#tituloGNUEj3 {
+  margin-top: 0;
+  color: white;
+  background-color: #79b8cf;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+}
+#codigoEj3 {
+  background-color: white;
+  font-weight: bold;
+}
+
+
+/*Fin Ej3*/
