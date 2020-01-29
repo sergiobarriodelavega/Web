@@ -1,40 +1,98 @@
 <!DOCTYPE html>
 <html lang="es-es">
   <head>
-    <title>Página web - Sergio Barrio</title>
-    <link rel="stylesheet" href="css.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-    <meta charset="UTF-8">
+    <title>HTML - Sergio Barrio</title>
+    <link rel="stylesheet" href="css.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
   </head>
   <body>
-    <h1 id="tituloHTML" class="titulo">HTML <i class="fa fa-html5" aria-hidden="true"></i></h1>
+    <nav>
+      <iframe class="iframesWeb" id="menuIframe" src="menu.html"></iframe>
+    </nav>
+    <h1 id="tituloHTML" class="titulo">
+      HTML <i class="fa fa-html5" aria-hidden="true"></i>
+    </h1>
+
     <div class="contenidoBody">
-        <p>Lenguaje de marcas que se utiliza para el desarrollo de páginas web. <abbr title="HyperText Markup Language">HTML</abbr> hace referencia a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.</p>
-        <p>Los tags se definen entre los símbolos &lt;tag&gt;</p>
-        <hr>
-      <h2>!DOCTYPE html</h2>
+      <p>
+        Lenguaje de marcas que se utiliza para el desarrollo de páginas web.
+        <abbr title="HyperText Markup Language">HTML</abbr> hace referencia a
+        HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.
+      </p>
+      <p>Los tags se definen entre los símbolos &lt;tag&gt;</p>
+      <hr />
+      <section>
+        <h2>!DOCTYPE html</h2>
         <p>Indicamos que le fichero es de tipo HTML</p>
-        <hr>
-      <h2>&lt;!-- <span class="cursiva">Comentario --&gt;</span></h2>
-        <p>Nos sirve para crear comentarios. Los comentarios también aparecen en inspeccionar elemento de los navegadores, por lo que es importante cuidar los comentarios que ponemos.</p>
+        <hr />
+      </section>
+      <section>
+        <h2>&lt;!-- <span class="cursiva">Comentario --&gt;</span></h2>
+        <p>
+          Nos sirve para crear comentarios. Los comentarios también aparecen en
+          inspeccionar elemento de los navegadores, por lo que es importante
+          cuidar los comentarios que ponemos.
+        </p>
         <!-- The cake is a lie-->
-        <hr>
-      <h2>html</h2>
+        <hr />
+      </section>
+      <section>
+        <h2>html</h2>
         <p>Sirve para indicar que el fichero es de tipo html.</p>
-        <hr>
-      <h2>head</h2>
-        <p>En él definiremos parametros de la pagina web, como codificación, título del a web etc.</p>
-        <hr>
-      <h2>title</h2>
-        <p>Establecemos el título de la pestaña de nuestra página web.</p>
-        <hr>
-      <h2>body</h2>
-        <p>Indicamos el comienzo del cuerpo de la página html. Este contiene todos los elementos visuales de la web.</p>
-        <hr>
-      <h2>h1 ... h6</h2>
-        <p>Nos permite crear titulos. Indicaremos su nivel de importancia mediante números. Estos van del 1 al 6, siendo 1 el más importante, y del cual solo puede haber uno. A menor importancia, más pequeña es la letra.</p>
+        <hr />
+      </section>
+      <section>
+        <h2>head</h2>
+        <p>
+          En él definiremos parametros de la pagina web, como codificación,
+          título del a web etc.
+        </p>
+        <h3>Title</h3>
+        <p>Define el titulo de la pestaña</p>
+        <div class="ejemplo-Codigo">
+          <pre>
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+          </pre>
+        </div>
+        <h3>meta</h3>
+        <p>Se usa para especificar, entre muchas cosas, la codificación del texto, descripción de la página, palabras clave...</p>
+        <div class="ejemplo-Codigo">
+<pre>
+&l;tmeta charset="UTF-8"&gt;
+</pre>
+        </div>
+        <hr />
+      </section>
+      <section>
+        <h2>body</h2>
+        <p>
+          Indicamos el comienzo del cuerpo de la página html. Este contiene
+          todos los elementos visuales de la web.
+        </p>
+        <hr />
+      </section>
+      <section>
+        <h2>h1 ... h6</h2>
+        <p>
+          Nos permite crear titulos. Indicaremos su nivel de importancia
+          mediante números. Estos van del 1 al 6, siendo 1 el más importante, y
+          del cual solo puede haber uno. A menor importancia, más pequeña es la
+          letra.
+        </p>
         <div class="ejemplo">
           <h1>Cabecera h1</h1>
           <h2>Cabecera h2</h2>
@@ -43,127 +101,225 @@
           <h5>Cabecera h5</h5>
           <h6>Cabecera h6</h6>
         </div>
-        <hr>
-      <h2>p</h2>
+        <hr />
+      </section>
+      <section>
+        <h2>p</h2>
         <p>Nos permite crear párrafos.</p>
-        <hr>
-      <h2>a</h2>
+        <hr />
+      </section>
+      <section>
+        <h2>a</h2>
         <p>Creamos enlaces. Tiene dos atributos:</p>
         <ul>
           <li>href: Indicamos cual es el enlace al que se quiere ir</li>
-          <li>target: Indicamos si queremos que se abra el enlace en una nueva pestaña (_blank).</li>
+          <li>
+            target: Indicamos si queremos que se abra el enlace en una nueva
+            pestaña (_blank).
+          </li>
         </ul>
         <h3>target</h3>
         <p>Podemos hacer diferentes target</p>
-          <h4>_blank</h4>
-          <p>Abrimos el enlace en una nueva pestaña</p>
-          <div class="ejemplo">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Enlace que se abre en una nueva pestaña</a>
-          </div>
-          <h4>_self</h4>
-          <p>Es el que viene por defecto. Indica que el enlace se abrira en la misma pestaña en la que estamos</p>
-          <div class="ejemplo">
-            <a href="https://www.w3schools.com">Enlace que se carga en la misma pestaña</a>
-          </div>
-          <p>Podemos hacer referencia a enlaces externos e internos</p>
-          <h4>_parent</h4>
-          <p>Abrimos el enlace en un frame</p>
-          <div class="ejemplo">
-            <a href="#" target="_blank">Enlace que se abre en un frame</a>
-          </div>
-          <h4>_top</h4>
-          <p>Abrimos el enlace en el cuerpo de la ventana</p>
-          <div class="ejemplo">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Enlace que se abre en en el cuerpo de la ventana</a>
-          </div>
-        <h3>Imagenes como enlaces</h3>
-        <p>Podemos hacer que una imagen tenga un enalce, declarando un elemento a y dentor de él, ele elemento imagen</p>
+        <h4>_blank</h4>
+        <p>Abrimos el enlace en una nueva pestaña</p>
         <div class="ejemplo">
-          <a href="https://en.wikipedia.org/wiki/HTML5" title="Ir a la wikipedia de HTML5"><img width="200px;" src="./img/html_logo.png"></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            >Enlace que se abre en una nueva pestaña</a
+          >
         </div>
-        <p><a href="css.html#tituloLinks">Ir al CSS de enlaces <i class="fa fa-external-link"></i></a></p>
-        <hr>
-      <h2>img</h2>
-        <p>Insertamos imágenes. Dentro de la etiqueta img tenemos dos atributos. src, en el cual indicamos el origen de la imagen, y alt, en el que establecemos un texto que aparecerá en la imagen al poner el cursor encima. También tenemos los atributos width, y height, con los que establecemos el tamaño de la imagen</p>
-        <br>
+        <h4>_self</h4>
+        <p>
+          Es el que viene por defecto. Indica que el enlace se abrira en la
+          misma pestaña en la que estamos
+        </p>
         <div class="ejemplo">
-          <img src="./img/html_logo.png" alt="Imagen con el logo de HTML" width="200px;">
+          <a href="https://www.w3schools.com"
+            >Enlace que se carga en la misma pestaña</a
+          >
+        </div>
+        <p>Podemos hacer referencia a enlaces externos e internos</p>
+        <h4>_parent</h4>
+        <p>Abrimos el enlace en un frame</p>
+        <div class="ejemplo">
+          <a href="#" target="_blank">Enlace que se abre en un frame</a>
+        </div>
+        <h4>_top</h4>
+        <p>Abrimos el enlace en el cuerpo de la ventana</p>
+        <div class="ejemplo">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            >Enlace que se abre en en el cuerpo de la ventana</a
+          >
+        </div>
+        <h3>Imagenes como enlaces</h3>
+        <p>
+          Podemos hacer que una imagen tenga un enalce, declarando un elemento a
+          y dentor de él, ele elemento imagen
+        </p>
+        <div class="ejemplo">
+          <a
+            href="https://en.wikipedia.org/wiki/HTML5"
+            title="Ir a la wikipedia de HTML5"
+            ><img width="200px;" src="./img/html_logo.png"
+          /></a>
+        </div>
+        <p>
+          <a href="css.html#tituloLinks"
+            >Ir al CSS de enlaces <i class="fa fa-external-link"></i
+          ></a>
+        </p>
+        <hr />
+      </section>
+      <section>
+        <h2>img</h2>
+        <p>
+          Insertamos imágenes. Dentro de la etiqueta img tenemos dos atributos.
+          src, en el cual indicamos el origen de la imagen, y alt, en el que
+          establecemos un texto que aparecerá en la imagen al poner el cursor
+          encima. También tenemos los atributos width, y height, con los que
+          establecemos el tamaño de la imagen
+        </p>
+        <br />
+        <div class="ejemplo">
+          <img
+            src="./img/html_logo.png"
+            alt="Imagen con el logo de HTML"
+            width="200px;"
+          />
         </div>
         <h3>map</h3>
-        <p>Define el mapa de una imágen. De esta forma definimos areas en las que se puede hacer click dentro de la imagen.</p>
-        <p>Información detallada en <a href="https://www.w3schools.com/html/html_images_imagemap.asp">W3Schools</a></p>
+        <p>
+          Define el mapa de una imágen. De esta forma definimos areas en las que
+          se puede hacer click dentro de la imagen.
+        </p>
+        <p>
+          Información detallada en
+          <a href="https://www.w3schools.com/html/html_images_imagemap.asp"
+            >W3Schools</a
+          >
+        </p>
         <div class="ejemplo">
-          <img src="./img/workplace.jpg" alt="Workplace" usemap="#workmap">
+          <img src="./img/workplace.jpg" alt="Workplace" usemap="#workmap" />
         </div>
 
         <map name="workmap">
-         <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm">
-         <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm">
-         <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/coffee.htm">
+          <area
+            shape="rect"
+            coords="34,44,270,350"
+            alt="Computer"
+            href="https://www.w3schools.com/html/computer.htm"
+          />
+          <area
+            shape="rect"
+            coords="290,172,333,250"
+            alt="Phone"
+            href="https://www.w3schools.com/html/phone.htm"
+          />
+          <area
+            shape="circle"
+            coords="337,300,44"
+            alt="Coffee"
+            href="https://www.w3schools.com/html/coffee.htm"
+          />
         </map>
-        <hr>
-      <h2>button</h2>
-        <p>Definimos botones. </p>
+        <hr />
+      </section>
+      <section>
+        <h2>button</h2>
+        <p>Definimos botones.</p>
         <div class="ejemplo">
           <button>Botón</button>
         </div>
 
-        <hr>
-      <h2>Listas</h2>
+        <hr />
+      </section>
+      <section>
+        <h2>Listas</h2>
         <h3>ul</h3>
-          <p>Son listas sin ordenar, con símbolos</p>
+        <p>Son listas sin ordenar, con símbolos</p>
         <h3>ol</h3>
-          <p>Son listas ordenadas, con números ...</p>
+        <p>Son listas ordenadas, con números ...</p>
         <h3>li</h3>
-          <p>Es cada uno de los elementos de la lista.</p>
-          <div class="ejemplo">
-            <p>Ejemplo:</p>
-            <ul>
-              <li>Lunes</li>
-              <li>Martes</li>
-              <li>Miércoles</li>
-              <li>Jueves</li>
-              <li>Viernes</li>
-              <li>Sábado</li>
-              <li>Domingo</li>
-            </ul>
-          </div>
+        <p>Es cada uno de los elementos de la lista.</p>
+        <div class="ejemplo">
+          <p>Ejemplo:</p>
+          <ul>
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miércoles</li>
+            <li>Jueves</li>
+            <li>Viernes</li>
+            <li>Sábado</li>
+            <li>Domingo</li>
+          </ul>
+        </div>
 
-          <hr>
+        <hr />
         <h3>&lt;ol type="A"&gt;</h3>
-        <p>Podemos cambiar el tipo de numeracion en listas, definiendo el tipo de enumeración que queremos</p>
+        <p>
+          Podemos cambiar el tipo de numeracion en listas, definiendo el tipo de
+          enumeración que queremos
+        </p>
         <p>Existen varios tipos:</p>
         <ul>
-          <li>type="1" 	La lista se enumera con numeros (Por defecto)</li>
-          <li>type="A" 	La lista se enumera con letras mayúsculas</li>
-          <li>type="a" 	La lista se enumera con letras minúsculas</li>
-          <li>type="I" 	La lista se enumera con numeros romanos en mayúsculas</li>
-          <li>type="i" 	La lista se enumera con numeros romanos en minúsculas</li>
+          <li>type="1" La lista se enumera con numeros (Por defecto)</li>
+          <li>type="A" La lista se enumera con letras mayúsculas</li>
+          <li>type="a" La lista se enumera con letras minúsculas</li>
+          <li>
+            type="I" La lista se enumera con numeros romanos en mayúsculas
+          </li>
+          <li>
+            type="i" La lista se enumera con numeros romanos en minúsculas
+          </li>
         </ul>
-      <h2>br</h2>
+      </section>
+      <section>
+        <h2>br</h2>
         <p>Nos sirve para insertar saltos de línea. No tiene cierre /</p>
-        <hr>
-      <h2>Atributos</h2>
+        <hr />
+      </section>
+      <section>
+        <h2>Atributos</h2>
         <h3>style</h3>
-          <p>Aplicamos estilos al elemento que contenga el atributo (css). Dependiendo del elemento podremos cambiar unos valores u otros.</p>
-          <p><a href="css.html"><button title="Ir a la Web de CSS">Ir a CSS</button></a></p>
-          <div class="ejemplo">
-            <p id="ejemploStyle">Ejemplo</p>
-          </div>
+        <p>
+          Aplicamos estilos al elemento que contenga el atributo (css).
+          Dependiendo del elemento podremos cambiar unos valores u otros.
+        </p>
+        <p>
+          <a href="css.html"
+            ><button title="Ir a la Web de CSS">Ir a CSS</button></a
+          >
+        </p>
+        <div class="ejemplo">
+          <p id="ejemploStyle">Ejemplo</p>
+        </div>
         <h3>lang</h3>
-          <p>Definimos en que idioma esta nuestra web</p>
-          <hr>
-      <h2 title="Title de un title">title</h2>
-        <p title="Si, esto es un title">Nos sirve para definir texto que aparecerá encima del elemento si dejamos el cursor.</p>
-        <hr>
-      <h2>hr</h2>
-      <p>Inserta una linea:</p>
-          <hr>
-          <hr>
-      <h2>meta charset="UTF-8"</h2>
+        <p>Definimos en que idioma esta nuestra web</p>
+        <hr />
+      </section>
+      <section>
+        <h2 title="Title de un title">title</h2>
+        <p title="Si, esto es un title">
+          Nos sirve para definir texto que aparecerá encima del elemento si
+          dejamos el cursor.
+        </p>
+        <hr />
+      </section>
+      <section>
+        <h2>hr</h2>
+        <p>Inserta una linea:</p>
+        <hr />
+        <hr />
+      </section>
+      <section>
+        <h2>meta charset="UTF-8"</h2>
         <p>Codificación para el texto</p>
-      <h2>pre</h2>
-        <p>Contenedor de texto tal y como lo escribimos. <br> Ejemplo de pre: </p>
+      </section>
+      <section>
+        <h2>pre</h2>
+        <p>
+          Contenedor de texto tal y como lo escribimos. <br />
+          Ejemplo de pre:
+        </p>
         <div class="ejemplo-Codigo">
           <pre>
   {
@@ -187,178 +343,442 @@
           </pre>
         </div>
 
-        <hr>
-      <h2>Formateo de texto</h2>
-        <p>Se pueden meter dentro de otros elementos, y nos permiten dar formatos predeterminados al texto.</p>
+        <hr />
+      </section>
+      <section>
+        <h2>Formateo de texto</h2>
+        <p>
+          Se pueden meter dentro de otros elementos, y nos permiten dar formatos
+          predeterminados al texto.
+        </p>
         <h3>b</h3>
-          <p>Ponemos en negrita el contenido que hay entre la <b>etiqueta</b></p>
+        <p>Ponemos en negrita el contenido que hay entre la <b>etiqueta</b></p>
         <h3>strong</h3>
-          <p>Texto importante. Se ve igual que el b pero sirve especialmente para <strong>gente invidente, algoritmos de búsqueda...</strong></p>
+        <p>
+          Texto importante. Se ve igual que el b pero sirve especialmente para
+          <strong>gente invidente, algoritmos de búsqueda...</strong>
+        </p>
         <h3>i</h3>
-          <p>Texto en <i>italica</i></p>
+        <p>Texto en <i>italica</i></p>
         <h3>em</h3>
-          <p>Enfasis de texto. Se ve igual que i pero sirve <em> especialmente </em> para gente invidente, algoritmos de búsqueda...</p>
+        <p>
+          Enfasis de texto. Se ve igual que i pero sirve
+          <em> especialmente </em> para gente invidente, algoritmos de
+          búsqueda...
+        </p>
         <h3>mark</h3>
-          <p><mark>Marcamos texto</mark> como si lo hiciésemos con un marcador amarillo</p>
+        <p>
+          <mark>Marcamos texto</mark> como si lo hiciésemos con un marcador
+          amarillo
+        </p>
         <h3>small</h3>
-          <p>Hacemos el texto más <small>pequeño</small></p>
+        <p>Hacemos el texto más <small>pequeño</small></p>
         <h3>del</h3>
-          <p>Tachamos texto <del> como este </del></p>
+        <p>Tachamos texto <del> como este </del></p>
         <h3>ins</h3>
-          <p>Texto <ins>insertado</ins>. Al igual que en algunos de los casos anteriores, sirve especialmente para gente invidente, algoritmos de búsqueda...</p>
+        <p>
+          Texto <ins>insertado</ins>. Al igual que en algunos de los casos
+          anteriores, sirve especialmente para gente invidente, algoritmos de
+          búsqueda...
+        </p>
         <h3>sub</h3>
-          <p>Nos permite hacer <sub>subíndices</sub></p>
+        <p>Nos permite hacer <sub>subíndices</sub></p>
         <h3>sup</h3>
-          <p>Nos permite elevar <sup>texto</sup></p>
+        <p>Nos permite elevar <sup>texto</sup></p>
         <h3>q</h3>
-          <p>Nos permite crear citas</p>
-          <p>Stephen hawking <q>Me he dado cuenta que incluso las personas que dicen que todo está predestinado y que no podemos hacer nada para cambiar nuestro destino, siguen mirando a ambos lados antes de cruzar la calle.</q>
+        <p>Nos permite crear citas</p>
+        <p>
+          Stephen hawking
+          <q
+            >Me he dado cuenta que incluso las personas que dicen que todo está
+            predestinado y que no podemos hacer nada para cambiar nuestro
+            destino, siguen mirando a ambos lados antes de cruzar la calle.</q
+          >
+        </p>
         <h3>blockquote</h3>
-          <p>Sirve para citar información de otras webs.</p>
-          <div class="ejemplo">
-            <blockquote cite="http://www.worldwildlife.org/who/index.html">
-            For 50 years, WWF has been protecting the future of nature.
-            The world's leading conservation organization,
-            WWF works in 100 countries and is supported by
-            1.2 million members in the United States and
-            close to 5 million globally.
-            </blockquote>
-          </div>
+        <p>Sirve para citar información de otras webs.</p>
+        <div class="ejemplo">
+          <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The
+            world's leading conservation organization, WWF works in 100
+            countries and is supported by 1.2 million members in the United
+            States and close to 5 million globally.
+          </blockquote>
+        </div>
         <h3>abbr</h3>
-          <p>Indica abreviaciones</p>
-          <p>La <abbr title="Organización Internacional del Trabajo">OIT</abbr> fue fundada el 11 de abril de 1919</p>
+        <p>Indica abreviaciones</p>
+        <p>
+          La <abbr title="Organización Internacional del Trabajo">OIT</abbr> fue
+          fundada el 11 de abril de 1919
+        </p>
         <h3>address</h3>
-          <p>Definimos información de contacto. Suele mostrarse en cursiva</p>
-          <div class="ejemplo">
-            <address>
-            Escrito por Sergio Barrio.<br>
-            Visítanos en:<br>
-            iescomercio.com<br>
-            Paseo del Prior, 97<br>
+        <p>Definimos información de contacto. Suele mostrarse en cursiva</p>
+        <div class="ejemplo">
+          <address>
+            Escrito por Sergio Barrio.<br />
+            Visítanos en:<br />
+            iescomercio.com<br />
+            Paseo del Prior, 97<br />
             España
-            </address>
-          </div>
+          </address>
+        </div>
         <h3>cite</h3>
-          <p>Se usa para indicar títulos de obras:</p>
-          <div class="ejemplo">
-            <img src="./img/arte.jpg" alt="Cuadro con relojes derretidos en un paisaje" style="width:400px;">
-            <p><cite>La persistencia de la memoria</cite> de Salvador Dalí, pintado en 1931.</p>
-          </div>
+        <p>Se usa para indicar títulos de obras:</p>
+        <div class="ejemplo">
+          <img
+            src="./img/arte.jpg"
+            alt="Cuadro con relojes derretidos en un paisaje"
+            style="width:400px;"
+          />
+          <p>
+            <cite>La persistencia de la memoria</cite> de Salvador Dalí, pintado
+            en 1931.
+          </p>
+        </div>
         <h3>bdo</h3>
         <p>Define en que dirección va el texto</p>
         <div class="ejemplo">
           <bdo dir="rtl">Como este</bdo>
         </div>
-        <hr>
-      <h2>Tablas</h2>
-      <p>Para definir tablas usamos la etiqueta &lt;table&gt;</p>
-      <p>Las tablas tienen los siguientes elementos: </p>
-      <ul>
-        <li>Filas</li>
-        <li>Celdas</li>
-        <li>Cabezeras</li>
-        <li>Titulos (captions)</li>
-      </ul>
-          <h3>Filas</h3>
-          <p>Se defininen con &lt;tr&gt;</p>
-          <h3>Celdas</h3>
-          <p>Se definen con &lt;td&gt; dentro del elemento de fila (tr)</p>
-          <h3>Cabezeras</h3>
-          <p>Dentro de las filas, podemos declarar cabezeras de la tabla, las cuales reciben un formato en negrita</p>
-          <h3>colspan</h3>
-          <p>Nos permite unir varias celdas de una tabla en la direccion de izquierda a derecha</p>
-          <h3>rowspan</h3>
-          <p>Nos permite unir varias celdas de una tabla en la direccion de arriba a abajo</p>
-          <h3>Titulo/caption</h3>
-          <p>Podemos ponerle titulos a las tablas con la etiqueta caption dentro del tag &lt;table&gt;</p>
-          <h3>Ejemplo de una tabla elaborada:</h3>
-          <table id="horario">
-            <caption>Horario escolar</caption>
-            <tr>
-              <th>Hora</th>
-              <th>Lunes</th>
-              <th>Martes</th>
-              <th>Miércoles</th>
-              <th>Jueves</th>
-              <th>Viernes</th>
-            </tr>
-            <tr>
-              <td>16:15 - 17:05</td>
-              <td class="basesDeDatos" rowspan="2">Bases de datos</td>
-              <td class="programación" rowspan="2">Programación</td>
-              <td class="sisinf" rowspan="2">Sistemas Informáticos</td>
-              <td class="programación" rowspan="2">Programación</td>
-              <td class="programación" rowspan="2">Programación</td>
-            </tr>
-            <tr>
-              <td>17:10 - 18:00</td>
-            </tr>
-            <tr>
-              <td>18:05 - 18:55</td>
-              <td class="programación" rowspan="2">Programación</td>
-              <td class="basesDeDatos" rowspan="2">Bases de datos</td>
-              <td class="lenguajesDeMarcas">Lenguajes de Marcas</td>
-              <td class="sisinf" rowspan="2">Sistemas Informáticos</td>
-              <td class="fol" rowspan="2">FOL</td>
-            </tr>
-            <tr>
-              <td>19:20 - 20:10</td>
-              <td class="basesDeDatos" rowspan="2">Bases de datos</td>
-            </tr>
-            <tr>
-              <td>20:15 - 21:05</td>
-              <td class="fol">FOL</td>
-              <td class="sisinf">Sistemas Informáticos</td>
-              <td class="entornos" rowspan="2">Entornos de desarrollo</td>
-              <td class="lenguajesDeMarcas" rowspan="2">Lenguajes de Marcas</td>
-            </tr>
-            <tr>
-              <td>21:10 - 22:00</td>
-              <td class="ingles">Inglés Tecnico</td>
-              <td class="ingles">Inglés Tecnico</td>
-              <td class="entornos">Entornos de desarrollo</td>
-            </tr>
-          </table>
-          <h3>Ejercicios</h3>
-            <h4>Si ponemos distinto numeros de celdas en cada fila ¿que pasa?</h4>
-            <table>
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>2</td>
-              </tr>
-            </table>
-            <p>No pasa nada</p>
-            <h4>Celdas con difernte color y collapse, ¿cual tiene preferencia?</h4>
-            <table id="ejercicioColoresTablasCollapse">
-              <tr>
-                <td id="ejercicioTablaAzul">Azul</td>
-                <td id="ejercicioTablaVerde">Verde</td>
-              </tr>
-              <tr>
-                <td id="ejercicioTablaVerde">Verde</td>
-                <td id="ejercicioTablaAmarillo">Amarillo</td>
-              </tr>
-            </table>
-            <p>Como podemos ver, tiene preferencia el de la izquierda, y el de arriba</p>
-            <a target="_blank" href="css.html#tituloTablas">Ir a CSS de tablas <i class="fa fa-external-link"></i></a>
-          <hr>
-          <h2>div</h2>
-          <p>Tambien conocido como bloque o contenedor, nos permite agrupar elementos dentro de él.</p>
-          <div id="ejemploDIV">Los divs cojen por defecto el 100% del ancho, mientras que mantienen al minimo la altura</div>
-          <hr>
-          <h2>span</h2>
-          <p>Agurpa elementos pero a diferencia de div, no ocupa todo el ancho posible.</p>
-          <p>De esta forma podemos modificar <span id="ejemploSpan">texto</span> dentro de otros elementos como un parrafo</p>
-          <hr>
-          <a href="css.html"><button>Ir a CSS</button></a>
-          <br><br>
-    </div>
+        <hr />
+      </section>
+      <section>
+        <h2>Tablas</h2>
+        <p>Para definir tablas usamos la etiqueta &lt;table&gt;</p>
+        <p>Las tablas tienen los siguientes elementos:</p>
+        <ul>
+          <li>Filas</li>
+          <li>Celdas</li>
+          <li>Cabezeras</li>
+          <li>Titulos (captions)</li>
+        </ul>
+        <h3>Filas</h3>
+        <p>Se defininen con &lt;tr&gt;</p>
+        <h3>Celdas</h3>
+        <p>Se definen con &lt;td&gt; dentro del elemento de fila (tr)</p>
+        <h3>Cabezeras</h3>
+        <p>
+          Dentro de las filas, podemos declarar cabezeras de la tabla, las
+          cuales reciben un formato en negrita
+        </p>
+        <h3>colspan</h3>
+        <p>
+          Nos permite unir varias celdas de una tabla en la direccion de
+          izquierda a derecha
+        </p>
+        <h3>rowspan</h3>
+        <p>
+          Nos permite unir varias celdas de una tabla en la direccion de arriba
+          a abajo
+        </p>
+        <h3>Titulo/caption</h3>
+        <p>
+          Podemos ponerle titulos a las tablas con la etiqueta caption dentro
+          del tag &lt;table&gt;
+        </p>
+        <h3>Ejemplo de una tabla elaborada:</h3>
+        <table id="horario">
+          <caption>
+            Horario escolar
+          </caption>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+          <tr>
+            <td>16:15 - 17:05</td>
+            <td class="basesDeDatos" rowspan="2">Bases de datos</td>
+            <td class="programación" rowspan="2">Programación</td>
+            <td class="sisinf" rowspan="2">Sistemas Informáticos</td>
+            <td class="programación" rowspan="2">Programación</td>
+            <td class="programación" rowspan="2">Programación</td>
+          </tr>
+          <tr>
+            <td>17:10 - 18:00</td>
+          </tr>
+          <tr>
+            <td>18:05 - 18:55</td>
+            <td class="programación" rowspan="2">Programación</td>
+            <td class="basesDeDatos" rowspan="2">Bases de datos</td>
+            <td class="lenguajesDeMarcas">Lenguajes de Marcas</td>
+            <td class="sisinf" rowspan="2">Sistemas Informáticos</td>
+            <td class="fol" rowspan="2">FOL</td>
+          </tr>
+          <tr>
+            <td>19:20 - 20:10</td>
+            <td class="basesDeDatos" rowspan="2">Bases de datos</td>
+          </tr>
+          <tr>
+            <td>20:15 - 21:05</td>
+            <td class="fol">FOL</td>
+            <td class="sisinf">Sistemas Informáticos</td>
+            <td class="entornos" rowspan="2">Entornos de desarrollo</td>
+            <td class="lenguajesDeMarcas" rowspan="2">Lenguajes de Marcas</td>
+          </tr>
+          <tr>
+            <td>21:10 - 22:00</td>
+            <td class="ingles">Inglés Tecnico</td>
+            <td class="ingles">Inglés Tecnico</td>
+            <td class="entornos">Entornos de desarrollo</td>
+          </tr>
+        </table>
 
+        <h3>Ejercicios</h3>
+        <h4>Si ponemos distinto numeros de celdas en cada fila ¿que pasa?</h4>
+        <table>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </table>
+
+        <p>No pasa nada</p>
+        <h4>Celdas con difernte color y collapse, ¿cual tiene preferencia?</h4>
+        <table id="ejercicioColoresTablasCollapse">
+          <tr>
+            <td id="ejercicioTablaAzul">Azul</td>
+            <td id="ejercicioTablaVerde">Verde</td>
+          </tr>
+          <tr>
+            <td id="ejercicioTablaVerde">Verde</td>
+            <td id="ejercicioTablaAmarillo">Amarillo</td>
+          </tr>
+        </table>
+
+        <p>
+          Como podemos ver, tiene preferencia el de la izquierda, y el de arriba
+        </p>
+        <a target="_blank" href="css.html#tituloTablas"
+          >Ir a CSS de tablas <i class="fa fa-external-link"></i
+        ></a>
+        <hr />
+      </section>
+      <section>
+        <h2>div</h2>
+        <p>
+          Tambien conocido como bloque o contenedor, nos permite agrupar
+          elementos dentro de él.
+        </p>
+        <div id="ejemploDIV">
+          Los divs cojen por defecto el 100% del ancho, mientras que mantienen
+          al minimo la altura
+        </div>
+        <hr />
+      </section>
+      <section>
+        <h2>span</h2>
+        <p>
+          Agurpa elementos pero a diferencia de div, no ocupa todo el ancho
+          posible.
+        </p>
+        <p>
+          De esta forma podemos modificar
+          <span id="ejemploSpan">texto</span> dentro de otros elementos como un
+          parrafo
+        </p>
+        <hr />
+      </section>
+      <section>
+        <h2>Iframes</h2>
+        <p>No permiten insertar una web dentro de otra.</p>
+        <table class="tablaAtributos">
+          <tr>
+            <th>Atributo</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>src</td>
+            <td>Espicifica mediante una dirección, que web se quiere mostrar dentro del iframe</td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td>Nos permite definir un nombre para el Iframe, que se puede utilizar para los target de enlaces.</td>
+          </tr>
+        </table>
+        <h3>Ejemplo</h3>
+        <iframe src="ejemploIframe.html" width="" height=""></iframe>
+      </section>
+      <section>
+        <h2>Rutas de ficheros</h2>
+        <p>Podemos especificar las rutas de los ficheros</p>
+        <table class="tablaAtributos">
+          <tr>
+            <th>Ruta</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>"archivo.ext"</td>
+            <td>El archivo esta localizado en la misma carpeta que la página</td>
+          </tr>
+          <tr>
+            <td>"img/imagen.png"</td>
+            <td>El fichero esta localizado en una carpeta de la localizacion actual</td>
+          </tr>
+          <tr>
+            <td>"/img/imagen.png"</td>
+            <td>El archivo esta localizado en una carpeta especificada desde la raiz</td>
+          </tr>
+          <tr>
+            <td>"../imagenes.png"</td>
+            <td>La imagen esta localizada en una carpeta superior a la actual.</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Layout</h2>
+        <p>La estructura de una página web suele ser la siguiente: </p>
+        <img src="img/estructuraHTML.gif" alt="">
+        <br><br>
+        <table class="tablaAtributos">
+          <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>&lt;header&gt;</td>
+            <td>Define la cabezera de la página</td>
+          </tr>
+          <tr>
+            <td>&lt;nav&gt;</td>
+            <td>Define un contenedor con enlaces para navegar.</td>
+          </tr>
+          <tr>
+            <td>&lt;section&gt;</td>
+            <td>Define una sección</td>
+          </tr>
+          <tr>
+            <td>&lt;footer&gt;</td>
+            <td>Define el píe de página de la web.</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Computer Code</h2>
+          <h3>Entrada de teclado</h3>
+          <p>Representa entradas de texto</p>
+          <p>En Word puedes guardar un documento con <kbd>Ctrl + S</kbd></p>
+          <h3>Salida de programas</h3>
+          <p>Representa salidas de texto de programas</p>
+          <p>Si no introduces un valor correcto, el programa devolvera <samp>Error!</samp></p>
+          <h3>Variables</h3>
+          <p>Representa variables</p>
+          <p>Einstein escribio: <var>E</var> = <var>mc</var><sup>2</sup>. </p>
+      </section>
+      <section>
+        <h2>Charset</h2>
+        <p>Podemos definir que codificación de caracteres queremos usar en nuestra web. La más común y que cubre la mayoria de carácteres y símbolos del mundo es UTF-8</p>
+        <div class="ejemplo-Codigo">
+          <pre>&lt;meta charset="UTF-8"&gt;</pre>
+        </div>
+      </section>
+      <section>
+        <h2>Simbolos</h2>
+        <p>Los simbolos se pueden representar mediante el uso del simbolo <span class="cursiva">&</span> + el codigo o referencia del simbolo, cerrado con un ;. </p>
+          <div class="ejemplo">
+            <p>&euro&#59;</p>
+            <p>€</p>
+        </div>
+        <p><a href="https://www.toptal.com/designers/htmlarrows/">Web con todos los codigos</a></p>
+      </section>
+      <section>
+        <h2>URL Encode</h2>
+        <p>Las <abbr title="Uniform Resource Locator ">URL</abbr> o Uniform Resource Locator, identifican en la web a un recurso al que el usuario quiere acceder.</p>
+        <p>La estructura común es:</p>
+        <p>scheme://prefix.domain:port/path/filename</p>
+        <table class="tablaAtributos">
+          <tr>
+            <th>Palabra</th>
+            <th>Significado</th>
+          </tr>
+          <tr>
+            <td>scheme</td>
+            <td>Define el tipo de servicio (normalmente http o https)</td>
+          </tr>
+          <tr>
+            <td>prefix</td>
+            <td>Define el prefijo de dominio (Normalmente www)</td>
+          </tr>
+          <tr>
+            <td>domain</td>
+            <td>El dominio de la web</td>
+          </tr>
+          <tr>
+            <td>port</td>
+            <td>Define el número de puerto (por defecto es 80 "http") </td>
+          </tr>
+          <tr>
+            <td>path</td>
+            <td>Define la ruta al servicio (Si no se identifica, sera el index de la web)</td>
+          </tr>
+          <tr>
+            <td>filename</td>
+            <td>El nombre del fichero al que queremos acceder</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Formularios</h2>
+        <p>Se definen usando la etiqueta &lt;form&gt;. Dentro de los formularios podemos usar diferentes elementos.</p>
+        <h3>Atributos</h3>
+        <table class="tablaAtributos">
+          <tr>
+            <th>Atributo</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>action</td>
+            <td>Define que se va a hacer una vez se pulse el boton submit del formulario</td>
+          </tr>
+        </table>
+        <h3>input</h3>
+        <p>Define un elemento que recibira una entrada de dato. Dependiendo del tipo que definamos en el atributo type, tendremos uno u otro.</p>
+          <h4>text</h4>
+          <p>Entradas de texto</p>
+           <input name="firstname" type="text" autocomplete="off">
+         <h4>password</h4>
+         <p>Para contraseñas</p>
+         <input type="password" name="" value="" autocomplete="off">
+         <h4>submit</h4>
+         <p>Es el boton que enviara la información del formulario mediante la acción definida en el atributo action de la etiquta &lt;form&gt; del formualrio.</p>
+         <h4>radio</h4>
+         <p>Botones de radio. Solo podemos elegir uno de los que hay en el grupo definido. El grupo se define mediante el atributo name</p>
+         <input type="radio" name="radioPrueba" value="valor1" autocomplete="off">valor1 <br>
+         <input type="radio" name="radioPrueba" value="valor2" autocomplete="off">valor2 <br>
+         <input type="radio" name="radioPrueba" value="valor3" autocomplete="off">valor3 <br>
+         <h4>Checkbox</h4>
+         <p>Casillas. Podemos marcar multiples opciones</p>
+         <input type="checkbox" name="" value="valor1" autocomplete="off">Valor 1 <br>
+         <input type="checkbox" name="" value="valor2" autocomplete="off">Valor 2 <br>
+         <input type="checkbox" name="" value="valor3" autocomplete="off">Valor 3 <br>
+         <h4>Button</h4>
+         <input type="button" name="" onclick="alert('Esta ventana a sido ejecutada desde el atributo onclick')"value="Acción al hacer click">
+       <h3>select</h3>
+       <p>Nos genera una lista desplegable</p>
+       <p>Dentro del select definimos cada elemento con la etiqueta &lt;option&gt;</p>
+       <select class="" name="" autocomplete="off">
+         <option value="op1">Opción 1</option>
+         <option value="op2">Opción 2</option>
+       </select>
+      </section>
+    </div>
+    <footer>
+      <iframe
+        class="iframesWeb"
+        name="footer"
+        src="footer.html"
+        frameborder="0"
+      ></iframe>
+    </footer>
+    <script src="nospam.js"></script>
   </body>
 </html>

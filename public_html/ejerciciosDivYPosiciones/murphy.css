@@ -1,0 +1,86 @@
+body {
+  background-color: #cccccc;
+  font-family: Arial;
+}
+
+#titulo {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 5px;
+}
+
+#descripcion {
+  background-color: #ffd580;
+  border: 1px solid #7d6536;
+  width: 80%;
+  text-align: center;
+  height: 60px;
+  padding: 10px;
+  position: absolute;
+  left: 10%;
+  top: 6%;
+  font-size: 20px;
+}
+
+.ley {
+  width: 35%;
+  position: absolute;
+  height: 34%;
+  font-size: 20px;
+}
+.ley p{
+  margin: 10px;
+}
+#amarillo {
+  background-color: #ffff80;
+  border: 2px solid #d6d643;
+  left: 5%;
+}
+
+#azul {
+  background-color: #ccffff;
+  border: 2px solid #9fc6c6;
+  right: 5%;
+  text-align: right;
+}
+
+#rojo {
+  background-color: #ffb3b3;
+  border: 2px solid #846262;
+  right: 5%;
+  text-align: right;
+}
+
+#morado {
+  background-color: #ffe6ff;
+  border: 2px solid #bea7be;
+  left: 5%;
+}
+
+#verde {
+  background-color: #80ff80;
+  border: 2px solid #367d36;
+  left: 32%;
+  z-index: 1;
+  text-align: center;
+  top: 41%;
+}
+
+.leyArriba {
+  top: 22%;
+}
+
+.leyAbajo {
+  top: 61%;
+}
+
+.leyEncima:hover {
+  z-index: 2;
+}
+
+/*
+TIP: absoluta (z-index
+Desc :80% anchira
+El resto 35% anchura
+
+*/

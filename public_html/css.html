@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  <nav>
+    <iframe class="iframesWeb"id="menuIframe" src="menu.html"></iframe>
+  </nav>
   <h1 id="tituloCSS" class="titulo">CSS <i class="fa fa-css3" id="logoCSS" aria-hidden="true"></i></h1>
   <div class="contenidoBody">
     <p><abbr title="Cascading Style Sheets">CSS</abbr> hace referencia a Cascading Style Sheets (Hojas de Estilo en Cascada)</p>
@@ -21,6 +24,7 @@
       <li>Internal</li>
       <li>External</li>
     </ul>
+    <section>
     <h2>Inline</h2>
       <p>Declaramos los estilos dentro de los elementos en HTML</p>
       <p>&lt;h1 style="color:lime;"&gt;Este texto se veria de color verde&lt;/h1&gt;</p>
@@ -49,6 +53,8 @@
         <p>Declaramos todos los estilos en un documento css que enlazaremos al html con la etiqueta link dentro del &lt;head&gt;</p>
         <p>&lt;link rel="stylesheet" href="estilo.css"&gt;</p>
         <hr>
+      </section>
+        <section>
       <h2>Colores</h2>
       <p>Podemos definir colores de varias formas:</p>
         <h3>Nombres de los colores</h3>
@@ -88,6 +94,8 @@
             <p id="ejemploColorBorde">Podemos cambiar el color de los bordes de un elemento</p>
           </div>
         <hr>
+      </section>
+        <section>
       <h2>Fuentes</h2>
       <p>podemos cambiar varios aspectos de las letras</p>
         <h3>color</h3>
@@ -114,6 +122,8 @@
         </div>
 
       <hr>
+    </section>
+      <section>
       <h2>background</h2>
       <p>Cambiamos el color de fondo del elemento</p>
       <div class="ejemplo">
@@ -121,6 +131,8 @@
       </div>
 
       <hr>
+    </section>
+      <section>
       <h2>Espacios y areas en los elementos</h2>
       <p>Los elementos estan formados por:</p>
       <ul>
@@ -130,6 +142,8 @@
       </ul>
       <img id="explicacionElementos" src="img/explicacionElementos.png" alt="Explicación de los elementos para css">
       <hr>
+    </section>
+      <section>
       <h2 id="tituloBorder">border</h2>
       <p>Nos permite definir bordes a los elemnentos</p>
       <div class="ejemplo">
@@ -137,11 +151,15 @@
       </div>
 
       <hr>
+    </section>
+      <section>
       <h2 id="tituloPadding">padding</h2>
       <p>Define el espacio entre el texto y el borde del elemento.</p>
       <div class="ejemplo">
         <p id="ejemploPadding">3px red solid y padding 10px</p>
       </div>
+    </section>
+      <section>
       <h2 id="tituloMargin">margin</h2>
       <p>La distancia entre diferentes elementos.</p>
       <p>La caja azul tiene mas margen, por lo que la distancia con la caja verde es mayor de lo normal.</p>
@@ -151,6 +169,8 @@
       </div>
 
       <hr>
+    </section>
+      <section>
       <h2>Selectores de CSS</h2>
       <p>Nos permite aplicar estilos a dichos elementos</p>
       <p>Tenemos 3 tipos:</p>
@@ -173,6 +193,8 @@
         </div>
 
         <hr>
+      </section>
+        <section>
       <h2 id="tituloLinks">Links</h2>
       <p>Podemos cambiar el aspectos de los elementos segun que interaccion se haga con ellos.</p>
       <p>Por ejemplo, con elaces podemos:</p>
@@ -188,6 +210,7 @@
         <p>Podemos usar estos estados en diferentes elementos, como en botones</p>
         <button id="ejemploBotonEstado">Ejemplo</button>
         <hr>
+        <section>
       <h2 id="tituloTablas">Tablas</h2>
       <p>Con CSS podemos editar diferentes aspectos de las tablas</p>
         <h3>:nth-child(<i>valor</i>)</h3>
@@ -398,12 +421,16 @@
           </tr>
         </table>
       <hr>
+    </section>
+      <section>
       <h2 id="tituloGoogleFonts">Google Fonts</h2>
       <p>Podmeos agregar fuentes externas, mediante el uso de CSS´s externos. Google nos ofrece algunas fuentes desde su <a href="https://fonts.google.com/">página</a>.</p>
         <h3>Importar Google Fonts</h3>
         <p>Buscamos una fuente desde la página de <a href="https://fonts.google.com/">Google Fonts</a>, e importamos el css que nos indique</p>
         <p id="ejemploGoogleFonts">Fuente Gloria Hallelujah de Google Fonts</p>
       <hr>
+    </section>
+      <section>
       <h2>Font Awesome</h2>
       <p>Con font awesome podemos insertar iconos en nuestra web. Estos iconos son imagenes vectoriales SVG, por lo que no pierden calidad al hacer zoom.</p>
         <h3>Importar Font Awesome</h3>
@@ -442,6 +469,8 @@
         </div>
 
     <hr>
+  </section>
+    <section>
     <h2>Listas</h2>
     <p>De las listas podemos modificar:</p>
     <ul>
@@ -465,6 +494,8 @@
           <li>Elemento</li>
         </ol>
     <hr>
+  </section>
+    <section>
     <h2>Primer examen corregido</h2>
     <p><a href="primerExamen.html">Aqui</a>puedes ver el primer examen corregido.</p>
     <hr>
@@ -478,14 +509,65 @@
       <li>inherit: Hereda el valor de su padre</li>
     </ul>
     <div class="ejemplo" id="ejemploFloatRight">
-      <p><img src="img/debian.jpg" alt="Logo de Debian" id="logoDebian"></img>Este es un ejemplo con float right, por lo que el elemento de la imagen deberia de estar a la derecha del parrafo</p>
+      <p><img src="img/debian.jpg" alt="Logo de Debian" id="logoDebian"></img>Este es un ejemplo con float right, por lo que el elemento de la imagen deberia de estar a la derecha del parrafo.</p>
+      <p>Debian es un sistema operativo (S.O.) libre, para ordenadores.</p>
 
     </div>
     <hr>
-    <a href="index.html"><button>Ir a HTML</button></a>
-    <br><br>
+    </section>
+    <section>
+      <h2>Posiciones</h2>
+      <p>Define la posición y como debe posicionarse</p>
+      <table class="tablaAtributos">
+        <tr>
+          <th>Posición</th>
+          <th>Descripción</th>
+        </tr>
+        <tr>
+          <td>static</td>
+          <td>El elemento se posiciona con normalidad, siguiendo la corriente por defecto del elemento</td>
+        </tr>
+        <tr>
+          <td>relative</td>
+          <td>Se posiciona relativamente al la posicion por defecto (statica)</td>
+        </tr>
+        <tr>
+          <td>fixed</td>
+          <td>El elemento se posiciona segun el punto de vista, por lo que el elemento se mantiene en el mismo sitio</td>
+        </tr>
+        <tr>
+          <td>absolute</td>
+          <td>Se posiciona relativamente al elemento padre más cercano</td>
+        </tr>
+        <tr>
+          <td>sticky</td>
+          <td>El elemento se posiciona relativamente al scroll del usuario</td>
+        </tr>
+      </table>
+      <p>Mira los ejercicios a continuación en los que se aplican las diferentes posiciones</p>
+    </section>
+    <section>
+      <h2>Display</h2>
+      <p>Define la forma en la que se comportan los elementos</p>
+      <h3>block</h3>
+      <p>El elemento se comportara como un bloque, es decir, ocupara por defecto el 100% del ancho, y no podra haber más elementos en la misma linea que el.</p>
+      <h3>Inline</h3>
+      <p>La anchura del elemento solo ocupa lo esencial, permitiendo más elementos en la misma línea</p>
+      <h3>none</h3>
+      <p>Suele usarse para esconder elementos y mostrarlos</p>
+    </section>
+    <section>
+      <h2>Ejercicios 2</h2>
+      <h3>Ejercicio Software Libre</h3>
+      <a href="ejerciciosDivYPosiciones/softwareLibre.html">Ir al ejercicio resuelto.</a>
+      <h3>Ejercicio Leyes de Murphy</h3>
+      <a href="ejerciciosDivYPosiciones/murphy.html">Ir al ejercicio resuelto.</a>
+    </section>
   </div>
-
+  <footer>
+    <iframe class="iframesWeb" name="footer" src="footer.html" frameborder="0"></iframe>
+  </footer>
+  <script src="nospam.js"></script>
 </body>
 
 </html>

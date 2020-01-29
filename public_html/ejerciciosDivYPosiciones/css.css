@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #e0e1eb;
+}
+#titulo{
+  background-color: #33354d;
+  position: fixed;
+  font-size: 45px;
+  width: 100%;
+}
+#titulo h1{
+  margin: 0;
+  color: white;
+}
+#escritorio{
+  margin-top:133px;
+}
+.subtitulo{
+  background-color: #33354d;
+  color: white;
+  margin-left: 15%;
+  width: 70%;
+  font-size: 60px;
+  text-align: center;
+}
+
+.software{
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 40px;
+}
+.software h3{
+  background-color: #29a333;
+  color: white;
+  font-size: 45px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  padding: 5px 15px;
+
+}
+.software p{
+  background-color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  font-size: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 40px;
+}
+
+/*
+
+75px alto
+Separacin entre Softwawre libre y escritorio: 53px
+Escritorio: 75px alto, 10% laterales
+Seperacion entre escritorio y 7zip: 40px alto, 10% lad
+7zip: alto 55px
+  contenido: 174px
+*/

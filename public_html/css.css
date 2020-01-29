@@ -1,541 +1,749 @@
 /*Estilos de la web - más a nuestro gusto*/
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  padding: 0;
-  margin: 0;
-  background-color: #fdfdfd;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fdfdfd;
 }
 
-body * {
-  /* Margenes generales*/
-}
 table {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #212121;
-  border-left: 4px #646464 solid;
-  padding-left: 8px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #212121;
+    border-left: 4px #646464 solid;
+    padding-left: 8px;
 }
 
 a {
-  text-decoration: none;
-  margin-right: 4px;
-  color: #00a1ff;
+    text-decoration: none;
+    margin-right: 4px;
+    color: #00a1ff;
 }
 
 a:hover {
-  color: #4cc0fe;
+    color: #4cc0fe;
 }
 
-a:active, a:visited {
-  color: #4d3eff;
+a:active,
+a:visited {
+    color: #4d3eff;
 }
 
 button {
-  font-size: 18px;
-  padding: 7px 13px;
-  background-color: #eaeaea;
-  border: 2px #4cc0fe solid;
-  color: #03afff;
+    font-size: 18px;
+    padding: 7px 13px;
+    background-color: #eaeaea;
+    border: 2px #4cc0fe solid;
+    color: #03afff;
 }
 
 button:hover {
-  cursor: pointer;
-  border: 2px #03afff solid;
-  color: #1e90ff;
-  background-color: #d9d9d9;
+    cursor: pointer;
+    border: 2px #03afff solid;
+    color: #1e90ff;
+    background-color: #d9d9d9;
 }
 
 .fa-external-link {
-  margin-left: 4px;
+    margin-left: 4px;
 }
 
 hr {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  border: 0;
-  height: 1px;
-  background: #7e7e7e;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border: 0;
+    height: 1px;
+    background: #7e7e7e;
 }
 
 .titulo {
-  text-align: center;
-  color: white;
-  font-size: 70px;
-  margin: 0;
-  padding: 120px;
-  background-color: #222222; /*En caso de que la imagen no se vea*/
-  font-weight: bold;
-  border: 0;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    padding: 200px;
+    background-color: #222222;
+    /*En caso de que la imagen no se vea*/
+    font-weight: bold;
+    border: 0;
 }
 
 #tituloCSS {
-  background-image: url("./img/css_fondo.jpg");
-  background-size: cover;
+    background-image: url("img/css_fondo.jpg");
+    background-size: cover;
 }
 
 #tituloHTML {
-  background-image: url("./img/html_fondo.png");
-  background-size: cover;
+    background-image: url("img/html_fondo.png");
+    background-size: cover;
 }
 
 .titulo i {
-  color: white;
+    color: white;
 }
 
 #logoCSS {
-  color: white;
+    color: white;
 }
 
 .ejemplo {
-  background-color: #e6e6e6;
-  border: 2px #a4a4a4 solid;
-  border-radius: 6px;
-  display: inline-block;
-  padding: 20px;
+    background-color: #e6e6e6;
+    border: 2px #a4a4a4 solid;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 20px;
 }
 
 .contenidoBody {
-  margin: 40px;
+    margin: 40px;
 }
 
 pre {
-  font-family: 'Inconsolata', monospace;
-}
-.ejemplo-Codigo{
-  display: inline-block;
-  background-color: #1B1B1B;
-  color: white;
-  border-radius: 20px;
-  padding: 30px;
+    font-family: "Inconsolata", monospace;
 }
 
+.ejemplo-Codigo {
+    display: inline-block;
+    background-color: #1b1b1b;
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.tablaAtributos {
+    border-collapse: collapse;
+}
+
+.tablaAtributos * {
+    padding: 10px;
+    border: 1px solid #525252;
+}
+
+.tablaAtributos th {
+    background-color: #1591ff;
+    color: white;
+    text-align: left;
+}
+
+.tablaAtributos tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.tablaAtributos td:nth-child(odd) {
+    font-style: italic;
+}
+
+
+/*Iframes*/
+
+iframe[name="contenido"] {
+    height: 1080px;
+}
+
+.iframesWeb {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+
+/* Menu */
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+    background: linear-gradient( 90deg, rgba(0, 167, 235, 1) 0%, rgba(0, 75, 158, 1) 100%);
+}
+
+.menuDerecha {
+    float: right;
+}
+
+.menuIzquierda {
+    float: left;
+}
+
+#tituloMenu {
+    display: block;
+    padding: 20px 30px;
+    font-size: 30px;
+    color: white;
+}
+
+#menu li a {
+    padding: 20px 30px;
+    display: block;
+    font-size: 30px;
+    color: white;
+}
+
+.menuDerecha:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+#menuIframe {
+    height: 74px;
+}
 
 
 /*Estilos específicos de ejemplos*/
+
+
 /*Parte de HTML*/
-.cursiva{
-  font-style: italic;
+
+.cursiva {
+    font-style: italic;
 }
+
 #ejemploStyle {
-  color: lime;
+    color: lime;
 }
 
 #horario {
-  border: 2px solid #212121;
-  border-collapse: collapse;
+    border: 2px solid #212121;
+    border-collapse: collapse;
 }
-#horario caption{
-  font-size: 30px;
+
+#horario caption {
+    font-size: 30px;
 }
+
 #horario th {
-  background-color: #212121;
-  border-collapse: collapse;
-  color: white;
-  padding: 5px;
+    background-color: #212121;
+    border-collapse: collapse;
+    color: white;
+    padding: 5px;
 }
 
 #horario td {
-  border: 2px solid black;
-  border-collapse: collapse;
-  padding: 5px;
-  text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
 }
 
 .basesDeDatos {
-  background-color: #ff4646;
+    background-color: #ff4646;
 }
 
 .lenguajesDeMarcas {
-  background-color: #a0ff86;
+    background-color: #a0ff86;
 }
 
 .programación {
-  background-color: #fdff63;
+    background-color: #fdff63;
 }
 
 .fol {
-  background-color: #ff98ee;
+    background-color: #ff98ee;
 }
 
 .sisinf {
-  background-color: #8abeff;
+    background-color: #8abeff;
 }
 
 .ingles {
-  background-color: #cacaca;
+    background-color: #cacaca;
 }
 
 .entornos {
-  background-color: #ffbe7a;
+    background-color: #ffbe7a;
 }
 
 #ejercicioColoresTablasCollapse {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 #ejercicioTablaAzul {
-  border: 2px solid blue;
+    border: 2px solid blue;
 }
 
 #ejercicioTablaVerde {
-  border: 2px solid green;
+    border: 2px solid green;
 }
 
 #ejercicioTablaAmarillo {
-  border: 2px solid yellow;
+    border: 2px solid yellow;
 }
 
 #ejemploDIV {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
-#ejemploSpan{
-  color: red;
-  border: 1px solid green;
+#ejemploSpan {
+    color: red;
+    border: 1px solid green;
 }
+
+
 /*Fin parte HTML*/
 
+
 /*Parte de css*/
+
 #explicacionElementos {
-  margin-top: 20px;
-  width: 500px;
+    margin-top: 20px;
+    width: 500px;
 }
+
 #ejemeploColorFondo {
-  background-color: powderblue;
+    background-color: powderblue;
 }
 
 #ejemploFuente {
-  font-family: verdana;
+    font-family: verdana;
 }
 
-#divEjemploAlinearCentro{
-  display: block;
+#divEjemploAlinearCentro {
+    display: block;
 }
+
 #ejemploAlineacionCentro {
-  text-align: center;
+    text-align: center;
 }
 
 #ejemploColorRed {
-  color: red;
+    color: red;
 }
 
 #ejemploColorBlue {
-  color: blue;
+    color: blue;
 }
 
 #ejemploColorOrange {
-  color: orange;
+    color: orange;
 }
 
 #ejemploColorLightBlue {
-  color: lightblue;
+    color: lightblue;
 }
 
 #ejemploRGBA_4 {
-  background-color: rgba(255, 99, 71, 0.4);
+    background-color: rgba(255, 99, 71, 0.4);
 }
 
 #ejemploRGBA_6 {
-  background-color: rgba(255, 99, 71, 0.6);
+    background-color: rgba(255, 99, 71, 0.6);
 }
 
 #ejemploRGBA_8 {
-  background-color: rgba(255, 99, 71, 0.8);
+    background-color: rgba(255, 99, 71, 0.8);
 }
 
 #ejemploRGBA_1 {
-  background-color: rgba(255, 99, 71, 1);
+    background-color: rgba(255, 99, 71, 1);
 }
 
 #ejemploColorVerde {
-  color: green;
+    color: green;
 }
 
 #ejemploColorFondo {
-  background-color: #1e90ff;
-  color: white;
+    background-color: #1e90ff;
+    color: white;
 }
 
 #ejemploColorBorde {
-  border: 2px solid lime;
+    border: 2px solid lime;
 }
 
-#ejemploFuenteArial{
-  font-family: 'Times new roman';
+#ejemploFuenteArial {
+    font-family: "Times new roman";
 }
 
 #ejemplo20px {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 #ejemplo30px {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 #ejemplo40px {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 #ejemploBorde {
-  border: 3px red solid;
+    border: 3px red solid;
 }
 
 #ejemploPadding {
-  border: 3px red solid;
-  padding: 10px;
+    border: 3px red solid;
+    padding: 10px;
 }
 
 #ejemploMarginAzul {
-  border: 5px blue solid;
-  color: blue;
-  margin-bottom: 50px;
+    border: 5px blue solid;
+    color: blue;
+    margin-bottom: 50px;
 }
 
 #ejemploMarginVerde {
-  border: 5px green solid;
-  color: green;
+    border: 5px green solid;
+    color: green;
 }
 
 #ejemploEnlaceCSS {
-  text-decoration: none;
-  color: lime;
+    text-decoration: none;
+    color: lime;
 }
 
 #ejemploEnlaceCSS:hover {
-  color: red;
-  text-decoration: underline;
+    color: red;
+    text-decoration: underline;
 }
 
 #ejemploEnlaceCSS:active {
-  color: white;
-  background-color: blue;
+    color: white;
+    background-color: blue;
 }
 
 #ejemploEnlaceCSS:visited {
-  color: orange;
+    color: orange;
 }
 
 #ejemploBotonEstado {
-  background-color: #4ad3ff;
-  border: 2px #4ad3ff solid;
-  color: white;
-  padding: 8px 13px;
-  font-size: 20px;
+    background-color: #4ad3ff;
+    border: 2px #4ad3ff solid;
+    color: white;
+    padding: 8px 13px;
+    font-size: 20px;
 }
 
 #ejemploBotonEstado:hover {
-  background-color: #8ee3ff;
-  border: 2px black solid;
-  color: black;
-  cursor: pointer;
-  padding: 8px 13px;
-  font-size: 20px;
+    background-color: #8ee3ff;
+    border: 2px black solid;
+    color: black;
+    cursor: pointer;
+    padding: 8px 13px;
+    font-size: 20px;
 }
 
 #ejemploCollapse {
-  border: 1px black solid;
-  border-collapse: collapse;
+    border: 1px black solid;
+    border-collapse: collapse;
 }
 
-#ejemploCollapse th, td {
-  border: 1px black solid;
-  border-collapse: collapse;
+#ejemploCollapse th,
+td {
+    border: 1px black solid;
+    border-collapse: collapse;
 }
 
 #ejemploSeparate {
-  border: 1px black solid;
-  border-collapse: separate;
+    border: 1px black solid;
+    border-collapse: separate;
 }
 
-#ejemploSeparate th, td {
-  border: 1px black solid;
-  border-collapse: separate;
+#ejemploSeparate th,
+td {
+    border: 1px black solid;
+    border-collapse: separate;
 }
 
 #ejemploTablaEven {
-  border: 2px solid black;
-  border-collapse: collapse;
-}
-#ejemploTablaEven td,#ejemploTablaEven th {
-  border: 2px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
 }
-#ejemploTablaEven tr:nth-child(even) {
-  background-color: lightblue;
+
+#ejemploTablaEven td,
+#ejemploTablaEven th {
+    border: 2px solid black;
+    border-collapse: collapse;
 }
+
+#ejemploTablaEven tr:nth-child(even) {
+    background-color: lightblue;
+}
+
 #ejemploTablaEven tr:nth-child(odd) {
-  background-color: lightgreen;
+    background-color: lightgreen;
 }
 
 #ejemploGoogleFonts {
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 25px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
 }
 
 #ejemploFontAwesomeSteam {
-  font-size: 90px;
+    font-size: 90px;
 }
 
 #ejemploFontAwesomeStar20 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 #ejemploFontAwesomeStar30 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 #ejemploFontAwesomeStar40 {
-  font-size: 40px;
+    font-size: 40px;
 }
+
 #ejemploStack {
-  margin-top: 0;
-  margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
+
 #ejemploStackFrasco {
-  color: white;
+    color: white;
 }
 
 
 /*WORD*/
+
 #tablaWord {
-  margin: 0;
+    margin: 0;
 }
+
 #tablaWord td {
-  padding-left: 12px;
-  padding-right: 12px;
-  width: 10px;
-  height: 10px;
-  border: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 10px;
+    height: 10px;
+    border: 0;
 }
+
 #tablaWord cite {
-  text-align: center;
+    text-align: center;
 }
 
 #tituloGrajo {
-  text-align: center;
-  font-size: 70px;
-  color: black;
-  border: 0;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    border: 0;
 }
 
 #tablaWord p {
-  text-indent: 10%;
+    text-indent: 10%;
 }
 
 #tablaWord img {
-  padding-left: 30%;
+    padding-left: 30%;
 }
 
 #tablaWord {
-  width: 100%;
+    width: 100%;
 }
 
 .espacioEnBlaco {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .citaImagen {
-  text-align: center;
-  margin: 0;
+    text-align: center;
+    margin: 0;
 }
+
 
 /*Fin tabla word*/
 
+
 /* Ejercicio tablas 1*/
+
 #ejercicioTablas {
-  border: 2px solid #ccc;
-  border-collapse: collapse;
+    border: 2px solid #ccc;
+    border-collapse: collapse;
 }
-#ejercicioTablas td, #ejercicioTablas th{
-  border: 2px solid #ccc;
-  border-collapse: collapse;
+
+#ejercicioTablas td,
+#ejercicioTablas th {
+    border: 2px solid #ccc;
+    border-collapse: collapse;
 }
-#ejercicioTablas td{
-  width: 160px;
-  height: 160px;
+
+#ejercicioTablas td {
+    width: 160px;
+    height: 160px;
 }
-#tdPedro{
-  width: 70px;
-  height: 70px;
-  padding: 0;
-  margin: 0;
+
+#tdPedro {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
 }
 
 #ejemploTablasPedro {
-  writing-mode: tb-rl;
-  font-size: 30px;
-  padding-left: 41px;
+    writing-mode: tb-rl;
+    font-size: 30px;
+    padding-left: 41px;
 }
+
 #ejemploTablasAdios {
-  vertical-align: bottom;
-  direction: rtl;
-  padding: 0 !important;
+    vertical-align: bottom;
+    direction: rtl;
+    padding: 0 !important;
 }
-#ejemploTablasHola{
-  vertical-align: top;
-  text-align: center;
-  padding-top: 15px;
+
+#ejemploTablasHola {
+    vertical-align: top;
+    text-align: center;
+    padding-top: 15px;
 }
-#ejemploTablasCaracola{
-  background-color: green;
-  color: black;
-  vertical-align: middle;
-  text-align: center;
+
+#ejemploTablasCaracola {
+    background-color: green;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
 }
+
 #ejemploTablasR {
-  background-color: red;
-  vertical-align: middle;
-  text-align: center;
-}
-#ejemploTablasR p{
-  font-weight: bold;
-  text-decoration: underline;
-  transform: rotate(60deg);
-  font-size: 30px;
-  padding: 0;
+    background-color: red;
+    vertical-align: middle;
+    text-align: center;
 }
 
-#ejemploTablaHTML{
-  text-decoration: underline;
-  font-size: 40px;
+#ejemploTablasR p {
+    font-weight: bold;
+    text-decoration: underline;
+    transform: rotate(60deg);
+    font-size: 30px;
+    padding: 0;
 }
-#conjunto{
-  margin: 0;
-}
-#instagram{
-  font-size: 80px;
-  color: aquamarine;
-  margin-left: 45px;
-  margin-top: 15px;
-}
-#basura{
-  font-size: 200px;
-  padding-left: 0px;
-  margin: 0;
-  text-align: center;
-  vertical-align: middle;
 
+#ejemploTablaHTML {
+    text-decoration: underline;
+    font-size: 40px;
 }
+
+#conjunto {
+    margin: 0;
+}
+
+#instagram {
+    font-size: 80px;
+    color: aquamarine;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+
+#basura {
+    font-size: 200px;
+    padding-left: 0px;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
 #ejemploTablaLOL {
-  background-color: purple;
-  vertical-align: middle;
-  text-align: center;
+    background-color: purple;
+    vertical-align: middle;
+    text-align: center;
 }
 
-#ejemploTablasAzul{
-  background-color: blue;
+#ejemploTablasAzul {
+    background-color: blue;
 }
+
+
 /*Fin ejercicio tablas 1*/
 
 #ejemploListaSimbolosCuadrado {
-  list-style-type: square;
+    list-style-type: square;
 }
 
 #ejemploListaNumerosRomanos {
-  list-style-type: upper-roman;
+    list-style-type: upper-roman;
 }
 
+#ejemploFloatRight img {
+    float: right;
+    width: 100px;
+}
+
+
 /*Fin Parte de css*/
+
+
+/* Pie de Página */
+
+iframe[name="footer"] {
+    height: 169px;
+    margin: 0;
+    padding: 0;
+}
+
+#pieDePagina {
+    text-align: center;
+    /*background-color: #222222;*/
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    background: linear-gradient( 180deg, rgba(0, 167, 235, 1) 0%, rgba(0, 75, 158, 1) 100%);
+}
+
+#pieDePagina a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Mod Boton */
+
+#modBoton {
+    border: 10px solid black;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+}
+
+#modBotonDiv {
+    
+    width: 400px;
+    height: 300px;
+}
+
+#modPropiedades {
+    margin-left: 20px;
+
+}
+#modCambios{
+    position: absolute;
+}
+
+#modCambios {
+    margin-left: 50px;
+    background-color: #1b1b1b;
+    color: white;
+    padding: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+#modJS{
+    padding: 20px;
+    height: 300px;
+
+}
+#modJS div {
+    display: inline-block;
+    height: 300px;
+}
+
+#modSalida{
+    background-color: #1b1b1b;
+    color: white;
+    padding: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    position: absolute;
+    margin-left: 40px;
+    height: auto;
+}
+#modJSIframe{
+    width: 100%;
+    height: 370px;
+}
