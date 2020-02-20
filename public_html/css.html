@@ -13,10 +13,14 @@
 
 <body>
   <nav>
-    <iframe class="iframesWeb"id="menuIframe" src="menu.html"></iframe>
+    <iframe class="iframesWeb" id="menuIframe" src="menu.html"></iframe>
   </nav>
   <h1 id="tituloCSS" class="titulo">CSS <i class="fa fa-css3" id="logoCSS" aria-hidden="true"></i></h1>
   <div class="contenidoBody">
+    <div id="indice">
+      <p><a id="mostrarIndice" onclick="mostrarIndice()">Indice <i id="mostrarIndiceIcono" class="fa fa-plus-square" aria-hidden="true"></i></a></p>
+      <div id="contenidoIndice"></div>
+    </div>
     <p><abbr title="Cascading Style Sheets">CSS</abbr> hace referencia a Cascading Style Sheets (Hojas de Estilo en Cascada)</p>
     <p>CSS se puede añadir al html de 3 formas</p>
     <ul>
@@ -28,7 +32,7 @@
     <h2>Inline</h2>
       <p>Declaramos los estilos dentro de los elementos en HTML</p>
       <p>&lt;h1 style="color:lime;"&gt;Este texto se veria de color verde&lt;/h1&gt;</p>
-      <h3>Internal</h2>
+      <h3>Internal</h3>
         <p>Declaramos estilos dentor de la etiqueta style</p>
         <div class="ejemplo-Codigo">
           <pre>
@@ -210,7 +214,8 @@
         <p>Podemos usar estos estados en diferentes elementos, como en botones</p>
         <button id="ejemploBotonEstado">Ejemplo</button>
         <hr>
-        <section>
+      </section>
+      <section>
       <h2 id="tituloTablas">Tablas</h2>
       <p>Con CSS podemos editar diferentes aspectos de las tablas</p>
         <h3>:nth-child(<i>valor</i>)</h3>
@@ -297,7 +302,7 @@
             <td></td>
           </tr>
           <tr>
-            <td id="ejemploTablasAdios" tyle="text-orientation:revert;">ADIÓS</td>
+            <td id="ejemploTablasAdios"><bdo dir="rtl">ADIÓS</bdo></td>
             <td id="tdPedro" rowspan="2">
               <p id="ejemploTablasPedro">PEDRO EL GUAPO</p>
             </td>
@@ -509,7 +514,7 @@
       <li>inherit: Hereda el valor de su padre</li>
     </ul>
     <div class="ejemplo" id="ejemploFloatRight">
-      <p><img src="img/debian.jpg" alt="Logo de Debian" id="logoDebian"></img>Este es un ejemplo con float right, por lo que el elemento de la imagen deberia de estar a la derecha del parrafo.</p>
+      <p><img src="img/debian.jpg" alt="Logo de Debian" id="logoDebian"/>Este es un ejemplo con float right, por lo que el elemento de la imagen deberia de estar a la derecha del parrafo.</p>
       <p>Debian es un sistema operativo (S.O.) libre, para ordenadores.</p>
 
     </div>
@@ -565,9 +570,11 @@
     </section>
   </div>
   <footer>
-    <iframe class="iframesWeb" name="footer" src="footer.html" frameborder="0"></iframe>
+    <iframe class="iframesWeb" name="footer" src="footer.html"></iframe>
   </footer>
-  <script src="nospam.js"></script>
+  <a id="irAlTop" href="#menuIframe"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+  <script src="js/nospam.js"></script>
+  <script src="js/indice.js"></script>
 </body>
 
 </html>

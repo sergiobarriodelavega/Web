@@ -3,18 +3,9 @@
   <head>
     <title>HTML - Sergio Barrio</title>
     <link rel="stylesheet" href="css.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="./font-awesome-4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"/>
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -26,6 +17,10 @@
     </h1>
 
     <div class="contenidoBody">
+      <div id="indice">
+        <p><a id="mostrarIndice" onclick="mostrarIndice()">Indice <i id="mostrarIndiceIcono" class="fa fa-plus-square" aria-hidden="true"></i></a></p>
+        <div id="contenidoIndice"></div>
+      </div>
       <p>
         Lenguaje de marcas que se utiliza para el desarrollo de páginas web.
         <abbr title="HyperText Markup Language">HTML</abbr> hace referencia a
@@ -72,7 +67,7 @@
         <p>Se usa para especificar, entre muchas cosas, la codificación del texto, descripción de la página, palabras clave...</p>
         <div class="ejemplo-Codigo">
 <pre>
-&l;tmeta charset="UTF-8"&gt;
+&lt;tmeta charset="UTF-8"&gt;
 </pre>
         </div>
         <hr />
@@ -159,7 +154,7 @@
           <a
             href="https://en.wikipedia.org/wiki/HTML5"
             title="Ir a la wikipedia de HTML5"
-            ><img width="200px;" src="./img/html_logo.png"
+            ><img class="ejemploLogoHTML" alt="Logo HTML" src="./img/html_logo.png"
           /></a>
         </div>
         <p>
@@ -183,7 +178,7 @@
           <img
             src="./img/html_logo.png"
             alt="Imagen con el logo de HTML"
-            width="200px;"
+            class="ejemploLogoHTML"
           />
         </div>
         <h3>map</h3>
@@ -285,9 +280,7 @@
           Dependiendo del elemento podremos cambiar unos valores u otros.
         </p>
         <p>
-          <a href="css.html"
-            ><button title="Ir a la Web de CSS">Ir a CSS</button></a
-          >
+          <a href="css.html" title="Ir a la Web de CSS">Ir a CSS</a>
         </p>
         <div class="ejemplo">
           <p id="ejemploStyle">Ejemplo</p>
@@ -547,10 +540,10 @@
         <table id="ejercicioColoresTablasCollapse">
           <tr>
             <td id="ejercicioTablaAzul">Azul</td>
-            <td id="ejercicioTablaVerde">Verde</td>
+            <td class="ejercicioTablaVerde">Verde</td>
           </tr>
           <tr>
-            <td id="ejercicioTablaVerde">Verde</td>
+            <td class="ejercicioTablaVerde">Verde</td>
             <td id="ejercicioTablaAmarillo">Amarillo</td>
           </tr>
         </table>
@@ -606,7 +599,7 @@
           </tr>
         </table>
         <h3>Ejemplo</h3>
-        <iframe src="ejemploIframe.html" width="" height=""></iframe>
+        <iframe src="ejemploIframe.html"></iframe>
       </section>
       <section>
         <h2>Rutas de ficheros</h2>
@@ -727,6 +720,10 @@
         </table>
       </section>
       <section>
+        <h2>XHTML</h2>
+        <p>Es el acronimo de EXtensible HyperText Markup Language. Esto define que nuestro documento tiene que estar bien </p>
+      </section>
+      <section>
         <h2>Formularios</h2>
         <p>Se definen usando la etiqueta &lt;form&gt;. Dentro de los formularios podemos usar diferentes elementos.</p>
         <h3>Atributos</h3>
@@ -747,25 +744,25 @@
            <input name="firstname" type="text" autocomplete="off">
          <h4>password</h4>
          <p>Para contraseñas</p>
-         <input type="password" name="" value="" autocomplete="off">
+         <input type="password"  value="" autocomplete="off">
          <h4>submit</h4>
          <p>Es el boton que enviara la información del formulario mediante la acción definida en el atributo action de la etiquta &lt;form&gt; del formualrio.</p>
          <h4>radio</h4>
          <p>Botones de radio. Solo podemos elegir uno de los que hay en el grupo definido. El grupo se define mediante el atributo name</p>
-         <input type="radio" name="radioPrueba" value="valor1" autocomplete="off">valor1 <br>
-         <input type="radio" name="radioPrueba" value="valor2" autocomplete="off">valor2 <br>
-         <input type="radio" name="radioPrueba" value="valor3" autocomplete="off">valor3 <br>
+         <input type="radio" name="radioPrueba" value="valor1" >valor1 <br>
+         <input type="radio" name="radioPrueba" value="valor2" >valor2 <br>
+         <input type="radio" name="radioPrueba" value="valor3" >valor3 <br>
          <h4>Checkbox</h4>
          <p>Casillas. Podemos marcar multiples opciones</p>
-         <input type="checkbox" name="" value="valor1" autocomplete="off">Valor 1 <br>
-         <input type="checkbox" name="" value="valor2" autocomplete="off">Valor 2 <br>
-         <input type="checkbox" name="" value="valor3" autocomplete="off">Valor 3 <br>
+         <input type="checkbox"  value="valor1">Valor 1 <br>
+         <input type="checkbox"  value="valor2">Valor 2 <br>
+         <input type="checkbox"  value="valor3">Valor 3 <br>
          <h4>Button</h4>
-         <input type="button" name="" onclick="alert('Esta ventana a sido ejecutada desde el atributo onclick')"value="Acción al hacer click">
+         <input type="button"  onclick="alert('Esta ventana a sido ejecutada desde el atributo onclick')" value="Acción al hacer click">
        <h3>select</h3>
        <p>Nos genera una lista desplegable</p>
        <p>Dentro del select definimos cada elemento con la etiqueta &lt;option&gt;</p>
-       <select class="" name="" autocomplete="off">
+       <select class=""  autocomplete="off">
          <option value="op1">Opción 1</option>
          <option value="op2">Opción 2</option>
        </select>
@@ -776,9 +773,14 @@
         class="iframesWeb"
         name="footer"
         src="footer.html"
-        frameborder="0"
       ></iframe>
     </footer>
-    <script src="nospam.js"></script>
+
+    <a id="irAlTop" href="#menuIframe"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+
+
+
+    <script src="js/nospam.js"></script>
+    <script src="js/indice.js"></script>
   </body>
 </html>

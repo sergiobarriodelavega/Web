@@ -51,35 +51,11 @@ function sincronizarSliders() {
     sliderG.value = verde;
     sliderB.value = azul;
 }
-/*
-function añadirCambios() {
-    let elem = document.createElement("p");
-    let spanR = document.createElement("span");
-    let spanG = document.createElement("span");
-    let spanB = document.createElement("span");
-    spanR.style.color = "rgb(" + rojo + ",0,0)";
-    spanR.innerText = rojo + "px";
 
-    spanG.style.color = "rgb(0," + verde + ",0)";
-    spanG.innerText = verde + "px";
-
-    spanB.style.color = "rgb(0,0," + azul + ")";
-    spanB.innerText = azul + "px";
-
-    elem.innerText = "Valor cambiado a RGB(";
-
-    elem.appendChild(spanR);
-    elem.innerHTML += ",";
-
-    elem.appendChild(spanG);
-    elem.innerHTML += ",";
-
-    elem.appendChild(spanB);
-    elem.innerHTML += ")";
-
-    cambios.appendChild(elem);
-}
-*/
 function colorAleatorio() {
     return Math.random() * (256 - 0);
+}
+
+boton.onclick = function(){
+    window.open('arcoiris.html');
 }

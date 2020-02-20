@@ -3,29 +3,24 @@
   <head>
     <title>HTML - Sergio Barrio</title>
     <link rel="stylesheet" href="css.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="./font-awesome-4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"/>
     <meta charset="UTF-8" />
   </head>
   <body>
     <nav>
       <iframe class="iframesWeb" id="menuIframe" src="menu.html"></iframe>
     </nav>
-    <h1 id="tituloHTML" class="titulo">
+    <h1 id="tituloJS" class="titulo">
       JavaScript
     </h1>
 
     <div class="contenidoBody">
+      <div id="indice">
+        <p><a id="mostrarIndice" onclick="mostrarIndice()">Indice <i id="mostrarIndiceIcono" class="fa fa-plus-square" aria-hidden="true"></i></a></p>
+        <div id="contenidoIndice"></div>
+      </div>
       <p>JavaScript es el lenguaje de programación de HTML y de la web. JavaScript es facil de aprender. Es un lenguaje interpretado, por lo que no se necesita compilar el codigo, y todo se ejecuta del lado del cliente.</p>
       <p>Los tags se definen entre los símbolos &lt;tag&gt;</p>
       <hr />
@@ -50,21 +45,79 @@
       </div>
       </section>
       <section>
-        <h2>console.log</h2>
+        <h2>console.log()</h2>
         <p>Nos permite imprimir mensajes por la consola dev (F12)</p>
       </section>
+
       <section>
-        <iframe src="modJS.html" frameborder="0" id="modJSIframe"></iframe>
+        <h2>alert()</h2>
+        <p>Nos sirve para sacar por pantalla notificaciones</p>
+        <button type="button" name="button" onclick="alert('Enhorabuena!! Has ganado un IPHONE X RS ULTRA SUPER NEON 4K MATE 2020!!!')">Mostrar alerta</button>
+      </section>
+      <section>
+        <h2>Variables</h2>
+        <p>A diferencia de otros leguajes de programación, en JavaScript no se necesita especificar de que tipo es la variable</p>
+        <div class="ejemplo-Codigo">
+          <pre>
+var miString = "Hola";
+var miNumero = 1;</pre>
+
+        </div>
+      </section>
+      <section>
+        <h2>document.getElementBy...</h2>
+        <p>Podemos seleciconar elementos del DOM según como lo queramos identificar</p>
+        <table class="tablaAtributos">
+          <tr>
+            <th>JS</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>getElementById("ID")</td>
+            <td>Nos devuelve el objeto con el id especificado</td>
+          </tr>
+          <tr>
+            <td>getElementsByClassName("Clase")</td>
+            <td>Nos devuelve un array de objetos que tengan la clase especificada</td>
+          </tr>
+          <tr>
+            <td>getElementsByTagName("Etiqueta")</td>
+            <td>Nos devuelve un array de objetos que tengan la etiqueta especificada</td>
+          </tr>
+        </table>
+        <p>Nos devuelve el elemento con el id especificado</p>
+        <div class="ejemplo-Codigo">
+          <pre>
+document.getElementById("demo").innerHTML = "Hello JavaScript";</pre>
+        </div>
+      </section>
+      <section>
+        <h2>Editar y obtener propiedades</h2>
+        <p>Podemos editar y obtener los valores de las propiedades de un elemento. Por ejemplo, para cojer el texto de un elemento usariamos:</p>
+        <div class="ejemplo-Codigo">
+          <pre>
+document.getElementById("demo").innerHTML = "Ahora lo cambio por lo que quiera"</pre>
+
+        </div>
+      </section>
+      <section>
+        <h2>Ejemplo de JS</h2>
+        <iframe src="modJS.html" id="modJSIframe" class="iframesWeb"></iframe>
+      </section>
+      <section>
+        <h2>Comentarios</h2>
+        <p>Para poner comentarios usamos //Y el texto del comentario</p>
+        <p>Para comentarios de varias lineas usamos /* varias lineas... */</p>
+      </section>
+      <section>
+        <h2></h2>
       </section>
     </div>
     <footer>
-      <iframe
-        class="iframesWeb"
-        name="footer"
-        src="footer.html"
-        frameborder="0"
-      ></iframe>
+      <iframe class="iframesWeb" name="footer" src="footer.html"></iframe>
     </footer>
-    <script src="nospam.js"></script>
+    <a id="irAlTop" href="#menuIframe"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+    <script src="js/nospam.js"></script>
+    <script src="js/indice.js"></script>
   </body>
 </html>
