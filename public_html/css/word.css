@@ -1,0 +1,48 @@
+/*WORD*/
+
+#tablaWord {
+    margin: 0;
+}
+
+#tablaWord td {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 10px;
+    height: 10px;
+    border: 0;
+}
+
+#tablaWord cite {
+    text-align: center;
+}
+
+#tituloGrajo {
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    border: 0;
+}
+
+#tablaWord p {
+    text-indent: 10%;
+}
+
+#tablaWord img {
+    padding-left: 30%;
+}
+
+#tablaWord {
+    width: 100%;
+}
+
+.espacioEnBlaco {
+    padding-bottom: 40px;
+}
+
+.citaImagen {
+    text-align: center;
+    margin: 0;
+}
+
+
+/*Fin tabla word*/

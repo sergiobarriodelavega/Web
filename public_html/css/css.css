@@ -77,23 +77,24 @@ hr {
 }
 
 #tituloCSS {
-    background-image: url("img/css_fondo.png");
+    background-image: url("../img/css_fondo.png");
     background-size: cover;
 }
 
 #tituloHTML {
-    background-image: url("img/html_fondo.png");
+    background-image: url("../img/html_fondo.png");
     background-size: cover;
 }
 
 #tituloJS {
-    background-image: url("img/js_fondo.png");
+    background-image: url("../img/js_fondo.png");
     background-size: cover;
 }
 
-#menuJS{
-  font-weight: 700;
+.textoMenu {
+    font-weight: 700;
 }
+
 .titulo i {
     color: white;
 }
@@ -207,67 +208,81 @@ iframe[name="contenido"] {
     height: 74px;
 }
 
+
 /* Indice */
-#contenidoIndice{
+
+#contenidoIndice {
     height: 0;
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s;
     transition: visibility 1s;
 }
-#contenidoIndice a{
-  display: block;
-  padding: 5px;
-  font-size: 20px;
-  cursor: pointer;
-  padding-left: 10px;
 
+#contenidoIndice a {
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 10px;
 }
-#contenidoIndice a:first-of-type{
-    margin-top: 10px;
 
-  }
-#mostrarIndice{
+#contenidoIndice a:first-of-type {
+    margin-top: 10px;
+}
+
+#mostrarIndice {
     font-size: 27px;
     color: #212121;
     cursor: pointer;
 }
-#mostrarIndice i{
+
+#mostrarIndice i {
     color: #00a1ff;
 }
-#mostrarIndice:hover i{
+
+#mostrarIndice:hover i {
     color: #66c7ff;
 }
-#hrIndice{
-  margin-top: 5px;
+
+#hrIndice {
+    margin-top: 5px;
 }
 
+
 /* Ir al top*/
-#irAlTop{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  font-size: 55px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  color: #222222;
-  opacity: 0.5;
-  transition: opacity 1s;
+
+#irAlTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 55px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    color: #222222;
+    opacity: 0.5;
+    transition: opacity 1s;
 }
+
 #irAlTop:hover {
-  opacity: 1;
+    opacity: 1;
 }
-#irAlTop:focus{
-  color: #555555;
-  transition: color 0.5s;
+
+#irAlTop:focus {
+    color: #555555;
+    transition: color 0.5s;
 }
+
+
 /*Estilos específicos de ejemplos*/
 
 
 /*Parte de HTML*/
-.ejemploLogoHTML{
-  width: 200px;
+
+.ejemploLogoHTML {
+    width: 200px;
 }
+
 .cursiva {
     font-style: italic;
 }
@@ -567,158 +582,6 @@ td {
     color: white;
 }
 
-
-/*WORD*/
-
-#tablaWord {
-    margin: 0;
-}
-
-#tablaWord td {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 10px;
-    height: 10px;
-    border: 0;
-}
-
-#tablaWord cite {
-    text-align: center;
-}
-
-#tituloGrajo {
-    text-align: center;
-    font-size: 70px;
-    color: black;
-    border: 0;
-}
-
-#tablaWord p {
-    text-indent: 10%;
-}
-
-#tablaWord img {
-    padding-left: 30%;
-}
-
-#tablaWord {
-    width: 100%;
-}
-
-.espacioEnBlaco {
-    padding-bottom: 40px;
-}
-
-.citaImagen {
-    text-align: center;
-    margin: 0;
-}
-
-
-/*Fin tabla word*/
-
-
-/* Ejercicio tablas 1*/
-
-#ejercicioTablas {
-    border: 2px solid #ccc;
-    border-collapse: collapse;
-}
-
-#ejercicioTablas td,
-#ejercicioTablas th {
-    border: 2px solid #ccc;
-    border-collapse: collapse;
-}
-
-#ejercicioTablas td {
-    width: 160px;
-    height: 160px;
-}
-
-#tdPedro {
-    width: 70px;
-    height: 70px;
-    padding: 0;
-    margin: 0;
-}
-
-#ejemploTablasPedro {
-    writing-mode: tb-rl;
-    font-size: 30px;
-    padding-left: 41px;
-}
-
-#ejemploTablasAdios {
-    vertical-align: bottom;
-    direction: rtl;
-    padding: 0 !important;
-}
-
-#ejemploTablasHola {
-    vertical-align: top;
-    text-align: center;
-    padding-top: 15px;
-}
-
-#ejemploTablasCaracola {
-    background-color: green;
-    color: black;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#ejemploTablasR {
-    background-color: red;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#ejemploTablasR p {
-    font-weight: bold;
-    text-decoration: underline;
-    transform: rotate(60deg);
-    font-size: 30px;
-    padding: 0;
-}
-
-#ejemploTablaHTML {
-    text-decoration: underline;
-    font-size: 40px;
-}
-
-#conjunto {
-    margin: 0;
-}
-
-#instagram {
-    font-size: 80px;
-    color: aquamarine;
-    margin-left: 45px;
-    margin-top: 15px;
-}
-
-#basura {
-    font-size: 200px;
-    padding-left: 0px;
-    margin: 0;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#ejemploTablaLOL {
-    background-color: purple;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#ejemploTablasAzul {
-    background-color: blue;
-}
-
-
-/*Fin ejercicio tablas 1*/
-
 #ejemploListaSimbolosCuadrado {
     list-style-type: square;
 }
@@ -769,16 +632,15 @@ iframe[name="footer"] {
 }
 
 #modBotonDiv {
-
     width: 400px;
     height: 300px;
 }
 
 #modPropiedades {
     margin-left: 20px;
-
 }
-#modCambios{
+
+#modCambios {
     position: absolute;
 }
 
@@ -789,17 +651,18 @@ iframe[name="footer"] {
     padding: 20px;
     font-family: 'IBM Plex Mono', monospace;
 }
-#modJS{
+
+#modJS {
     padding: 20px;
     height: 300px;
-
 }
+
 #modJS div {
     display: inline-block;
     height: 300px;
 }
 
-#modSalida{
+#modSalida {
     background-color: #1b1b1b;
     color: white;
     padding: 20px;
@@ -808,20 +671,87 @@ iframe[name="footer"] {
     margin-left: 40px;
     height: auto;
 }
-#modJSIframe{
+
+#modJSIframe {
     width: 100%;
     height: 370px;
 }
 
-#controlesHSL{
-  padding: 10px;
-  background-color: #222222;
-  width: 60%;
-  text-align: center;
+#controlesHSL {
+    padding: 10px;
+    background-color: #222222;
+    width: 60%;
+    text-align: center;
 }
-#barraHSL{
-  width: 70%;
+
+#barraHSL {
+    width: 70%;
 }
-.divCentrado{
-  text-align: center;
+
+.divCentrado {
+    text-align: center;
 }
+
+
+/* ejercicios PE*/
+
+.tituloEjercicios {
+    text-align: center;
+}
+
+.contenidoEjemplos {
+    text-align: center;
+}
+
+#contenidoEjemplos .vistaEjercicio:nth-child(odd) {
+    margin-right: 40px;
+}
+
+.vistaEjercicio {
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px lightgray solid;
+    height: 420px;
+    width: 840px;
+    display: inline-block;
+    background-size: 840px 420px;
+    transition: background-size 0.5s ease, filter 0.7s ease;
+    filter: brightness(50%);
+    margin-bottom: 40px;
+}
+
+.vistaEjercicio:hover {
+    background-size: 900px 480px;
+    filter: brightness(100%);
+}
+
+#veSoftwareLibre {
+    background-image: url("../img/pvCodigoAbierto.png");
+}
+
+#veMurphy {
+    background-image: url("../img/pvMurphy.png");
+}
+
+#veTablaPedro {
+    background-image: url("../img/pvTablaPedro.png");
+}
+
+#veWord {
+    background-image: url("../img/pvWord.png");
+}
+
+#veStarWars {
+    background-image: url("../img/pvStarWars.png");
+}
+
+#veStarWars {
+    background-image: url("../img/pvStarWars.png");
+}
+
+#vePrimerExamen {
+    background-image: url("../img/pvPrimerExamen.png");
+}
+
+
+/* FIN ejercicios PE*/

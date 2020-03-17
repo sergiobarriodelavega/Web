@@ -2,40 +2,41 @@
 <html lang="es-es">
 
 <head>
-  <meta charset="utf-8">
-  <title>CSS - Sergio Barrio</title>
-  <link rel="stylesheet" href="css.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>CSS - Sergio Barrio</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <nav>
-    <iframe class="iframesWeb" id="menuIframe" src="menu.html"></iframe>
-  </nav>
-  <h1 id="tituloCSS" class="titulo">CSS <i class="fa fa-css3" id="logoCSS" aria-hidden="true"></i></h1>
-  <div class="contenidoBody">
-    <div id="indice">
-      <p><a id="mostrarIndice" onclick="mostrarIndice()">Indice <i id="mostrarIndiceIcono" class="fa fa-plus-square" aria-hidden="true"></i></a></p>
-      <div id="contenidoIndice"></div>
-    </div>
-    <p><abbr title="Cascading Style Sheets">CSS</abbr> hace referencia a Cascading Style Sheets (Hojas de Estilo en Cascada)</p>
-    <p>CSS se puede añadir al html de 3 formas</p>
-    <ul>
-      <li>Inline</li>
-      <li>Internal</li>
-      <li>External</li>
-    </ul>
-    <section>
-    <h2>Inline</h2>
-      <p>Declaramos los estilos dentro de los elementos en HTML</p>
-      <p>&lt;h1 style="color:lime;"&gt;Este texto se veria de color verde&lt;/h1&gt;</p>
-      <h3>Internal</h3>
-        <p>Declaramos estilos dentor de la etiqueta style</p>
-        <div class="ejemplo-Codigo">
-          <pre>
+    <nav>
+        <iframe class="iframesWeb" id="menuIframe" src="menu.html"></iframe>
+    </nav>
+    <h1 id="tituloCSS" class="titulo">CSS <i class="fa fa-css3" id="logoCSS" aria-hidden="true"></i></h1>
+    <div class="contenidoBody">
+        <div id="indice">
+            <p><a id="mostrarIndice" onclick="mostrarIndice()">Indice <i id="mostrarIndiceIcono" class="fa fa-plus-square" aria-hidden="true"></i></a></p>
+            <div id="contenidoIndice"></div>
+        </div>
+        <p><abbr title="Cascading Style Sheets">CSS</abbr> hace referencia a Cascading Style Sheets (Hojas de Estilo en Cascada)</p>
+        <p>CSS se puede añadir al html de 3 formas</p>
+        <ul>
+            <li>Inline</li>
+            <li>Internal</li>
+            <li>External</li>
+        </ul>
+        <section>
+            <h2>Inline</h2>
+            <p>Declaramos los estilos dentro de los elementos en HTML</p>
+            <p>&lt;h1 style="color:lime;"&gt;Este texto se veria de color verde&lt;/h1&gt;</p>
+            <h3>Internal</h3>
+            <p>Declaramos estilos dentor de la etiqueta style</p>
+            <div class="ejemplo-Codigo">
+                <pre>
   &lt;style&gt;
     #id {
       background-color: blue;
@@ -51,530 +52,386 @@
     }
   &lt;/style&gt;
             </pre>
-        </div>
+            </div>
 
-        <h3>External</h3>
-        <p>Declaramos todos los estilos en un documento css que enlazaremos al html con la etiqueta link dentro del &lt;head&gt;</p>
-        <p>&lt;link rel="stylesheet" href="estilo.css"&gt;</p>
-        <hr>
-      </section>
+            <h3>External</h3>
+            <p>Declaramos todos los estilos en un documento css que enlazaremos al html con la etiqueta link dentro del &lt;head&gt;</p>
+            <p>&lt;link rel="stylesheet" href="estilo.css"&gt;</p>
+            <hr>
+        </section>
         <section>
-      <h2>Colores</h2>
-      <p>Podemos definir colores de varias formas:</p>
-        <h3>Nombres de los colores</h3>
-        <p>Por defecto, podemos definir color mediante nombres</p>
-        <div class="ejemplo">
-          <p id="ejemploColorRed">Red</p>
-          <p id="ejemploColorBlue">Blue</p>
-          <p id="ejemploColorOrange">Orange</p>
-          <p id="ejemploColorLightBlue">Light Blue</p>
-        </div>
-        <h3>RGB</h3>
-        <p>Formato: rgb(255, 99, 71)</p>
-        <h3>HEX</h3>
-        <p>Formato: #ee82ee</p>
-        <h3>HSL</h3>
-        <p>Formato: hsl(0, 100%, 50%)</p>
-        <h3>RGBA</h3>
-        <p>Es una extensión de RGB, que nos permite definir el color alfa (Transparencia)</p>
-        <div class="ejemplo">
-          <p id="ejemploRGBA_4">rgba(255, 99, 71, 0.4)</p>
-          <p id="ejemploRGBA_6">rgba(255, 99, 71, 0.6)</p>
-          <p id="ejemploRGBA_8">rgba(255, 99, 71, 0.8)</p>
-          <p id="ejemploRGBA_1">rgba(255, 99, 71, 1)</p>
-        </div>
+            <h2>Colores</h2>
+            <p>Podemos definir colores de varias formas:</p>
+            <h3>Nombres de los colores</h3>
+            <p>Por defecto, podemos definir color mediante nombres</p>
+            <div class="ejemplo">
+                <p id="ejemploColorRed">Red</p>
+                <p id="ejemploColorBlue">Blue</p>
+                <p id="ejemploColorOrange">Orange</p>
+                <p id="ejemploColorLightBlue">Light Blue</p>
+            </div>
+            <h3>RGB</h3>
+            <p>Formato: rgb(255, 99, 71)</p>
+            <h3>HEX</h3>
+            <p>Formato: #ee82ee</p>
+            <h3>HSL</h3>
+            <p>Formato: hsl(0, 100%, 50%)</p>
+            <h3>RGBA</h3>
+            <p>Es una extensión de RGB, que nos permite definir el color alfa (Transparencia)</p>
+            <div class="ejemplo">
+                <p id="ejemploRGBA_4">rgba(255, 99, 71, 0.4)</p>
+                <p id="ejemploRGBA_6">rgba(255, 99, 71, 0.6)</p>
+                <p id="ejemploRGBA_8">rgba(255, 99, 71, 0.8)</p>
+                <p id="ejemploRGBA_1">rgba(255, 99, 71, 1)</p>
+            </div>
 
-        <br>
-        <h3>Podemos cambiar el color de:</h3>
-          <h4>Texto</h4>
-          <p id="ejemploColorVerde">Verde</p>
-          <h4>Background</h4>
-          <div class="ejemplo">
-            <p id="ejemploColorFondo">Podemos cambiar el color de fondo de los elementos</p>
-          </div>
+            <br>
+            <h3>Podemos cambiar el color de:</h3>
+            <h4>Texto</h4>
+            <p id="ejemploColorVerde">Verde</p>
+            <h4>Background</h4>
+            <div class="ejemplo">
+                <p id="ejemploColorFondo">Podemos cambiar el color de fondo de los elementos</p>
+            </div>
 
-          <h4>Border Color</h4>
-          <div class="ejemplo">
-            <p id="ejemploColorBorde">Podemos cambiar el color de los bordes de un elemento</p>
-          </div>
-        <hr>
-      </section>
+            <h4>Border Color</h4>
+            <div class="ejemplo">
+                <p id="ejemploColorBorde">Podemos cambiar el color de los bordes de un elemento</p>
+            </div>
+            <hr>
+        </section>
         <section>
-      <h2>Fuentes</h2>
-      <p>podemos cambiar varios aspectos de las letras</p>
-        <h3>color</h3>
-        <p>Cambiamos el color de las letras</p>
-        <h3>font-family</h3>
-        <p>Cambiamos la fuente de la letra</p>
-        <p>Hay que tener en cuenta que puede que no todos los navegadores tengan instalada la fuente que hemos especificado.</p>
-        <p>Podemos especificar varias fuentes, para que en caso de no tener la primera, usar la segunda y asi sucesivamente.</p>
-        <div class="ejemplo">
-          <p id="ejemploFuenteArial">Esta fuente esta en Times new roman</p>
-        </div>
-        <h3>font-size</h3>
-        <p>Cambiamos el tamaño del texto. Se recomienda usar pixeles (px)</p>
-        <div class="ejemplo">
-          <p id="ejemplo20px">20px</p>
-          <p id="ejemplo30px">30px</p>
-          <p id="ejemplo40px">40px</p>
-        </div>
+            <h2>Fuentes</h2>
+            <p>podemos cambiar varios aspectos de las letras</p>
+            <h3>color</h3>
+            <p>Cambiamos el color de las letras</p>
+            <h3>font-family</h3>
+            <p>Cambiamos la fuente de la letra</p>
+            <p>Hay que tener en cuenta que puede que no todos los navegadores tengan instalada la fuente que hemos especificado.</p>
+            <p>Podemos especificar varias fuentes, para que en caso de no tener la primera, usar la segunda y asi sucesivamente.</p>
+            <div class="ejemplo">
+                <p id="ejemploFuenteArial">Esta fuente esta en Times new roman</p>
+            </div>
+            <h3>font-size</h3>
+            <p>Cambiamos el tamaño del texto. Se recomienda usar pixeles (px)</p>
+            <div class="ejemplo">
+                <p id="ejemplo20px">20px</p>
+                <p id="ejemplo30px">30px</p>
+                <p id="ejemplo40px">40px</p>
+            </div>
 
-        <h3>text-align</h3>
-        <p>Alinear el texto</p>
-        <div id="divEjemploAlinearCentro" class="ejemplo">
-          <p id="ejemploAlineacionCentro">Este texto esta alienado al centro con el valor "center"</p>
-        </div>
+            <h3>text-align</h3>
+            <p>Alinear el texto</p>
+            <div id="divEjemploAlinearCentro" class="ejemplo">
+                <p id="ejemploAlineacionCentro">Este texto esta alienado al centro con el valor "center"</p>
+            </div>
 
-      <hr>
-    </section>
-      <section>
-      <h2>background</h2>
-      <p>Cambiamos el color de fondo del elemento</p>
-      <div class="ejemplo">
-        <p id="ejemeploColorFondo">Este párrafo tiene como color de fondo powderblue</p>
-      </div>
+            <hr>
+        </section>
+        <section>
+            <h2>background</h2>
+            <p>Cambiamos el color de fondo del elemento</p>
+            <div class="ejemplo">
+                <p id="ejemeploColorFondo">Este párrafo tiene como color de fondo powderblue</p>
+            </div>
 
-      <hr>
-    </section>
-      <section>
-      <h2>Espacios y areas en los elementos</h2>
-      <p>Los elementos estan formados por:</p>
-      <ul>
-        <li><a href="#tituloMargin">Margen</a>: Es el espacio entre diferentes elementos.</li>
-        <li><a href="#tituloBorder">Borde</a>: Un borde que delimita al elemento.</li>
-        <li><a href="#tituloPadding">Padding</a>: Es el espacio interno entre el borde del elemento y el contenido.</li>
-      </ul>
-      <img id="explicacionElementos" src="img/explicacionElementos.png" alt="Explicación de los elementos para css">
-      <hr>
-    </section>
-      <section>
-      <h2 id="tituloBorder">border</h2>
-      <p>Nos permite definir bordes a los elemnentos</p>
-      <div class="ejemplo">
-        <p id="ejemploBorde">3px red solid</p>
-      </div>
+            <hr>
+        </section>
+        <section>
+            <h2>Espacios y areas en los elementos</h2>
+            <p>Los elementos estan formados por:</p>
+            <ul>
+                <li><a href="#tituloMargin">Margen</a>: Es el espacio entre diferentes elementos.</li>
+                <li><a href="#tituloBorder">Borde</a>: Un borde que delimita al elemento.</li>
+                <li><a href="#tituloPadding">Padding</a>: Es el espacio interno entre el borde del elemento y el contenido.</li>
+            </ul>
+            <img id="explicacionElementos" src="img/explicacionElementos.png" alt="Explicación de los elementos para css">
+            <hr>
+        </section>
+        <section>
+            <h2 id="tituloBorder">border</h2>
+            <p>Nos permite definir bordes a los elemnentos</p>
+            <div class="ejemplo">
+                <p id="ejemploBorde">3px red solid</p>
+            </div>
 
-      <hr>
-    </section>
-      <section>
-      <h2 id="tituloPadding">padding</h2>
-      <p>Define el espacio entre el texto y el borde del elemento.</p>
-      <div class="ejemplo">
-        <p id="ejemploPadding">3px red solid y padding 10px</p>
-      </div>
-    </section>
-      <section>
-      <h2 id="tituloMargin">margin</h2>
-      <p>La distancia entre diferentes elementos.</p>
-      <p>La caja azul tiene mas margen, por lo que la distancia con la caja verde es mayor de lo normal.</p>
-      <div class="ejemplo">
-        <p id="ejemploMarginAzul">Caja azul</p>
-        <p id="ejemploMarginVerde">Caja Verde</p>
-      </div>
+            <hr>
+        </section>
+        <section>
+            <h2 id="tituloPadding">padding</h2>
+            <p>Define el espacio entre el texto y el borde del elemento.</p>
+            <div class="ejemplo">
+                <p id="ejemploPadding">3px red solid y padding 10px</p>
+            </div>
+        </section>
+        <section>
+            <h2 id="tituloMargin">margin</h2>
+            <p>La distancia entre diferentes elementos.</p>
+            <p>La caja azul tiene mas margen, por lo que la distancia con la caja verde es mayor de lo normal.</p>
+            <div class="ejemplo">
+                <p id="ejemploMarginAzul">Caja azul</p>
+                <p id="ejemploMarginVerde">Caja Verde</p>
+            </div>
 
-      <hr>
-    </section>
-      <section>
-      <h2>Selectores de CSS</h2>
-      <p>Nos permite aplicar estilos a dichos elementos</p>
-      <p>Tenemos 3 tipos:</p>
-        <h3>id</h3>
-        <p>Se identifica con #. Se usa para elementos unicos, es decir, solo puede existinr un id con el mismo nombre atribuido a un solo elemento</p>
-        <p>Se lo podemos agregar a un elemento añadiendole el atributo id="nombreId"</p>
-        <h3>class</h3>
-        <p>Se identifica con . . Se usa cuando queremos aplicar un mismo estilo a varios elementos.</p>
-        <p>Se lo podemos agregar a un elemento añadiendole el atributo class="nombreClase"</p>
-        <h3>Nombre del elemento</h3>
-        <p>Podmeos aplicar estilos a elementos del documento indicando el nombre del elemento (tag) en css</p>
-        <p>Ejemplo. Un estilo a todos los elementos p del documento:</p>
-        <div class="ejemplo-Codigo">
-          <pre>
+            <hr>
+        </section>
+        <section>
+            <h2>Selectores de CSS</h2>
+            <p>Nos permite aplicar estilos a dichos elementos</p>
+            <p>Tenemos 3 tipos:</p>
+            <h3>id</h3>
+            <p>Se identifica con #. Se usa para elementos unicos, es decir, solo puede existinr un id con el mismo nombre atribuido a un solo elemento</p>
+            <p>Se lo podemos agregar a un elemento añadiendole el atributo id="nombreId"</p>
+            <h3>class</h3>
+            <p>Se identifica con . . Se usa cuando queremos aplicar un mismo estilo a varios elementos.</p>
+            <p>Se lo podemos agregar a un elemento añadiendole el atributo class="nombreClase"</p>
+            <h3>Nombre del elemento</h3>
+            <p>Podmeos aplicar estilos a elementos del documento indicando el nombre del elemento (tag) en css</p>
+            <p>Ejemplo. Un estilo a todos los elementos p del documento:</p>
+            <div class="ejemplo-Codigo">
+                <pre>
   p {
     color: white;
     padding: 2px;
   }
           </pre>
-        </div>
+            </div>
 
-        <hr>
-      </section>
+            <hr>
+        </section>
         <section>
-      <h2 id="tituloLinks">Links</h2>
-      <p>Podemos cambiar el aspectos de los elementos segun que interaccion se haga con ellos.</p>
-      <p>Por ejemplo, con elaces podemos:</p>
-        <h3>a:link</h3>
-        <p>El color normal del link</p>
-        <h3>a:visited</h3>
-        <p>Una vez visitado el enlace</p>
-        <h3>a:hover</h3>
-        <p>Encima del elemento</p>
-        <h3>a:active</h3>
-        <p>Cuando se mantiene el cursor encima del elemento</p>
-        <a id="ejemploEnlaceCSS" href="#tituloLinks">CSS en Enlaces</a>
-        <p>Podemos usar estos estados en diferentes elementos, como en botones</p>
-        <button id="ejemploBotonEstado">Ejemplo</button>
-        <hr>
-      </section>
-      <section>
-      <h2 id="tituloTablas">Tablas</h2>
-      <p>Con CSS podemos editar diferentes aspectos de las tablas</p>
-        <h3>:nth-child(<i>valor</i>)</h3>
-        <p>Nos permite modificar las filas/columnas (Según a lo que se lo apliquemos) impares de la tabla.</p>
-        <p>Podemos poner varios valores:</p>
-        <ul>
-          <li>even: imapres</li>
-          <li>odd: pares</li>
+            <h2 id="tituloLinks">Links</h2>
+            <p>Podemos cambiar el aspectos de los elementos segun que interaccion se haga con ellos.</p>
+            <p>Por ejemplo, con elaces podemos:</p>
+            <h3>a:link</h3>
+            <p>El color normal del link</p>
+            <h3>a:visited</h3>
+            <p>Una vez visitado el enlace</p>
+            <h3>a:hover</h3>
+            <p>Encima del elemento</p>
+            <h3>a:active</h3>
+            <p>Cuando se mantiene el cursor encima del elemento</p>
+            <a id="ejemploEnlaceCSS" href="#tituloLinks">CSS en Enlaces</a>
+            <p>Podemos usar estos estados en diferentes elementos, como en botones</p>
+            <button id="ejemploBotonEstado">Ejemplo</button>
+            <hr>
+        </section>
+        <section>
+            <h2 id="tituloTablas">Tablas</h2>
+            <p>Con CSS podemos editar diferentes aspectos de las tablas</p>
+            <h3>:nth-child(<i>valor</i>)</h3>
+            <p>Nos permite modificar las filas/columnas (Según a lo que se lo apliquemos) impares de la tabla.</p>
+            <p>Podemos poner varios valores:</p>
+            <ul>
+                <li>even: imapres</li>
+                <li>odd: pares</li>
 
-        </ul>
-        <table id="ejemploTablaEven">
-          <tr>
-            <th>Columna 1</th>
-            <th>Columna 1</th>
-          </tr>
-          <tr>
-            <td>Fila Impar</td>
-            <td>Fila Impar</td>
-          </tr>
-          <tr>
-            <td>Fila par</td>
-            <td>Fila par</td>
-          </tr>
-        </table>
-        <h3>border-collapse</h3>
-        <p>Definimos si queremos que los bordes colapsen entre si. Se suele aplicar a los elementos table, td y th</p>
-        <p>Puede tener tres valores</p>
-        <ul>
-          <li>collapse</li>
-          <li>separate</li>
-          <li>inherit</li>
-        </ul>
-          <h4>collapse</h4>
-          <p>Ejemplo con border-collapse: collapse</p>
-          <table id="ejemploCollapse">
-            <tr>
-              <th>Hora</th>
-              <th>Lunes</th>
-              <th>Martes</th>
-              <th>Miércoles</th>
-              <th>Jueves</th>
-              <th>Viernes</th>
-            </tr>
-            <tr>
-              <td>16:15</td>
-              <td>Bases de datos</td>
-              <td>Programación</td>
-              <td>Sistemas Infomráticos</td>
-              <td>Programación</td>
-              <td>Programación</td>
-            </tr>
-          </table>
-          <h4>separate</h4>
-          <p>Ejemplo sin border-collapse: collapse</p>
-          <table id="ejemploSeparate">
-        <tr>
-          <th>Hora</th>
-          <th>Lunes</th>
-          <th>Martes</th>
-          <th>Miércoles</th>
-          <th>Jueves</th>
-          <th>Viernes</th>
-        </tr>
-        <tr>
-          <td>16:15</td>
-          <td>Bases de datos</td>
-          <td>Programación</td>
-          <td>Sistemas Infomráticos</td>
-          <td>Programación</td>
-          <td>Programación</td>
-        </tr>
-      </table>
-        <h4>inherit</h4>
-        <p>El valor se hereda</p>
-      <h3>Ejercicios de tablas</h3>
-        <h4>Ejercicio 1</h4>
-        <table id="ejercicioTablas">
-          <tr>
-            <td></td>
-            <td id="ejemploTablasHola" rowspan="2">HOLA</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td id="ejemploTablasAdios"><bdo dir="rtl">ADIÓS</bdo></td>
-            <td id="tdPedro" rowspan="2">
-              <p id="ejemploTablasPedro">PEDRO EL GUAPO</p>
-            </td>
-            <td id="ejemploTablasCaracola">CARCOLA</td>
-            <td></td>
-            <td id="ejemploTablasR">
-              <p>R</p>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td id="ejemploTablaHTML" colspan="3">HTML</td>
-          </tr>
-          <tr>
-            <td id="ejemploTablaLOL" colspan="2" rowspan="2"><img id="logoLOL" src="./img/lol.png" alt="Logo del LOL"></td>
-            <td></td>
-            <td id="iconos" rowspan="3">
-              <span class="fa-stack fa-lg" id="conjunto">
-                <i class="fa fa-trash fa-stack-1x" id="basura" aria-hidden="true"></i>
-                <i class="fa fa-instagram  fa-stack-1x" id="instagram" aria-hidden="true"></i>
-              </span>
-            <td></td>
-            <td id="ejemploTablasAzul"></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-        <br>
-        <h4>Ejercicio estilo "Word" usando tablas</h4>
-        <table id="tablaWord">
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td rowspan="12"></td>
-            <td>
-              <h1 id="tituloGrajo">CUANDO EL GRAJO</h1>
-            </td>
-            <td rowspan="12"></td>
-          </tr>
-          <tr>
-            <td class="espacioEnBlaco"></td>
-          </tr>
-          <tr>
-            <td>
-              <p>Vuela bajo... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam felis urna, sodales id arcu at, venenatis elementum est. Pellentesque a magna molestie, imperdiet velit vel, sollicitudin purus. Donec euismod tempor mauris, in
-                pulvinar
-                urna. Suspendisse et aliquet ex. Morbi ut gravida nisi. Donec suscipit sapien vitae est aliquet, nec egestas lectus porttitor. Aliquam scelerisque auctor lorem quis suscipit. Vivamus consequat aliquet neque, nec hendrerit quam ultricies
-                id. Sed ac
-                mauris eget nisl finibus pulvinar. Praesent tristique tortor eget risus convallis porttitor sit amet eu elit. Etiam placerat mi non faucibus consectetur. Fusce sed erat in sem consectetur viverra. Quisque vel vulputate enim, nec fringilla
-                sapien.
-                Aliquam sem arcu, tristique ullamcorper condimentum eu, euismod eu enim. Vivamus ut neque id risus fringilla ultricies vitae eget nunc. Duis tempus et diam id hendrerit.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="espacioEnBlaco"></td>
-          </tr>
-          <tr>
-            <td>
-              <p>Morbi commodo, neque vel pretium tincidunt, nisi nisi mattis neque, a bibendum massa ex quis est. Ut semper felis hendrerit neque consectetur ultricies. Sed accumsan est ac est elementum venenatis. Suspendisse potenti. Sed et viverra ex.
-                In enim
-                nisi, feugiat pulvinar cursus eget, pellentesque vitae enim. Nam efficitur, risus nec vestibulum egestas, erat augue rutrum mi, in porta quam arcu ut sem. Maecenas condimentum efficitur mauris, in rhoncus ex vestibulum a.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="espacioEnBlaco"></td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./img/paisaje.jpg" alt="Fotografía de un paisaje">
-              <p class="citaImagen"><cite>Paisaje imaginario</cite></p>
-
-            </td>
-          </tr>
-          <tr>
-            <td class="espacioEnBlaco"></td>
-          </tr>
-          <tr>
-            <td>
-              <p>Aenean ac lectus nec dui malesuada convallis sit amet sed purus. Aliquam bibendum sem metus, quis scelerisque turpis venenatis quis. Morbi vitae ex eget nibh finibus vehicula. Quisque ornare metus rhoncus eleifend interdum. Pellentesque
-                tempus
-                nulla ac tincidunt tempus. Duis commodo suscipit nisi, interdum luctus nulla egestas eu. Donec eu tincidunt urna. Mauris lacinia, nisl ut facilisis ultricies, felis mauris euismod nisl, vel semper urna orci id dolor. Aliquam viverra justo
-                at tortor
-                euismod, id elementum mauris commodo. Suspendisse nec est et augue auctor volutpat eget eget lectus. Cras placerat tempor hendrerit. In sit amet ante enim. Aliquam cursus augue a tincidunt pretium. Aenean sollicitudin est augue, non
-                pellentesque
-                sapien mollis vel. Sed gravida ante diam, a accumsan urna ullamcorper nec.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="espacioEnBlaco"></td>
-          </tr>
-          <tr>
-            <td>
-              <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In auctor lorem vitae aliquam lobortis. Suspendisse potenti. Suspendisse sit amet porttitor ex, vitae bibendum lectus. Integer diam magna, elementum
-                eu libero
-                at, auctor pharetra sem. Sed massa justo, vehicula eu massa sed, tincidunt rutrum sapien. Proin porttitor leo nec diam vulputate pretium. Curabitur pulvinar aliquet mauris nec viverra. Maecenas volutpat felis non viverra rhoncus.
-                Vestibulum cursus
-                porttitor augue, nec venenatis tellus euismod sit amet. Vestibulum sit amet velit a nisl vestibulum auctor sit amet quis lacus.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td class="espacioEnBlaco"></td>
-          </tr>
-        </table>
-      <hr>
-    </section>
-      <section>
-      <h2 id="tituloGoogleFonts">Google Fonts</h2>
-      <p>Podmeos agregar fuentes externas, mediante el uso de CSS´s externos. Google nos ofrece algunas fuentes desde su <a href="https://fonts.google.com/">página</a>.</p>
-        <h3>Importar Google Fonts</h3>
-        <p>Buscamos una fuente desde la página de <a href="https://fonts.google.com/">Google Fonts</a>, e importamos el css que nos indique</p>
-        <p id="ejemploGoogleFonts">Fuente Gloria Hallelujah de Google Fonts</p>
-      <hr>
-    </section>
-      <section>
-      <h2>Font Awesome</h2>
-      <p>Con font awesome podemos insertar iconos en nuestra web. Estos iconos son imagenes vectoriales SVG, por lo que no pierden calidad al hacer zoom.</p>
-        <h3>Importar Font Awesome</h3>
-        <p>Tenemos que agregar el enlace al css externo de FotnAwesome. Lo podemos obtener en <a href="https://fontawesome.com/v4.7.0/">Font Awesome 4</a></p>
-        <p>Una vez enlazado el css de Font Awesome, agregaremos iconos buscandolos en la pagina de <a href="https://fontawesome.com/v4.7.0/icons/"> iconos de Font Awesome 4.7.0</a>, y agregando el elemento &lt;i&gt; correspondiente que nos proporciona la
-          web.</p>
-        <p>Ejemplo:</p>
-        <i id="ejemploFontAwesomeSteam" class="fa fa-steam-square" aria-hidden="true"></i>
-        <h3>Tamaño</h3>
-        <p>Para cambiar el tamaño de los iconos, usaremos el atributo de css size</p>
-        <p>De 20px a 40px:</p>
-        <i id="ejemploFontAwesomeStar20" class="fa fa-star" aria-hidden="true"></i>
-        <i id="ejemploFontAwesomeStar30" class="fa fa-star" aria-hidden="true"></i>
-        <i id="ejemploFontAwesomeStar40" class="fa fa-star" aria-hidden="true"></i>
-        <h3>Agrupar iconos</h3>
-        <p>Podemos agrupar iconos unos dentro de otros usando:</p>
-        <ul>
-          <li>Un elemento span que agrupara los iconos. En el definimos el tamaño general de los iconos</li>
-          <li>fa-stack2x , usado para el icono base (ej: Un circulo)</li>
-          <li>fa-stack1x , usado para el icono que se encontrara en el interior del otro</li>
-        </ul>
-        <p>Ejemplo:</p>
-        <div>
-          <span class="fa-stack fa-2x" id="ejemploStack">
+            </ul>
+            <table id="ejemploTablaEven">
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 1</th>
+                </tr>
+                <tr>
+                    <td>Fila Impar</td>
+                    <td>Fila Impar</td>
+                </tr>
+                <tr>
+                    <td>Fila par</td>
+                    <td>Fila par</td>
+                </tr>
+            </table>
+            <h3>border-collapse</h3>
+            <p>Definimos si queremos que los bordes colapsen entre si. Se suele aplicar a los elementos table, td y th</p>
+            <p>Puede tener tres valores</p>
+            <ul>
+                <li>collapse</li>
+                <li>separate</li>
+                <li>inherit</li>
+            </ul>
+            <h4>collapse</h4>
+            <p>Ejemplo con border-collapse: collapse</p>
+            <table id="ejemploCollapse">
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>16:15</td>
+                    <td>Bases de datos</td>
+                    <td>Programación</td>
+                    <td>Sistemas Infomráticos</td>
+                    <td>Programación</td>
+                    <td>Programación</td>
+                </tr>
+            </table>
+            <h4>separate</h4>
+            <p>Ejemplo sin border-collapse: collapse</p>
+            <table id="ejemploSeparate">
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>16:15</td>
+                    <td>Bases de datos</td>
+                    <td>Programación</td>
+                    <td>Sistemas Infomráticos</td>
+                    <td>Programación</td>
+                    <td>Programación</td>
+                </tr>
+            </table>
+            <h4>inherit</h4>
+            <p>El valor se hereda</p>
+            <hr>
+        </section>
+        <section>
+            <h2 id="tituloGoogleFonts">Google Fonts</h2>
+            <p>Podmeos agregar fuentes externas, mediante el uso de CSS´s externos. Google nos ofrece algunas fuentes desde su <a href="https://fonts.google.com/">página</a>.</p>
+            <h3>Importar Google Fonts</h3>
+            <p>Buscamos una fuente desde la página de <a href="https://fonts.google.com/">Google Fonts</a>, e importamos el css que nos indique</p>
+            <p id="ejemploGoogleFonts">Fuente Gloria Hallelujah de Google Fonts</p>
+            <hr>
+        </section>
+        <section>
+            <h2>Font Awesome</h2>
+            <p>Con font awesome podemos insertar iconos en nuestra web. Estos iconos son imagenes vectoriales SVG, por lo que no pierden calidad al hacer zoom.</p>
+            <h3>Importar Font Awesome</h3>
+            <p>Tenemos que agregar el enlace al css externo de FotnAwesome. Lo podemos obtener en <a href="https://fontawesome.com/v4.7.0/">Font Awesome 4</a></p>
+            <p>Una vez enlazado el css de Font Awesome, agregaremos iconos buscandolos en la pagina de <a href="https://fontawesome.com/v4.7.0/icons/"> iconos de Font Awesome 4.7.0</a>, y agregando el elemento &lt;i&gt; correspondiente que nos proporciona
+                la web.
+            </p>
+            <p>Ejemplo:</p>
+            <i id="ejemploFontAwesomeSteam" class="fa fa-steam-square" aria-hidden="true"></i>
+            <h3>Tamaño</h3>
+            <p>Para cambiar el tamaño de los iconos, usaremos el atributo de css size</p>
+            <p>De 20px a 40px:</p>
+            <i id="ejemploFontAwesomeStar20" class="fa fa-star" aria-hidden="true"></i>
+            <i id="ejemploFontAwesomeStar30" class="fa fa-star" aria-hidden="true"></i>
+            <i id="ejemploFontAwesomeStar40" class="fa fa-star" aria-hidden="true"></i>
+            <h3>Agrupar iconos</h3>
+            <p>Podemos agrupar iconos unos dentro de otros usando:</p>
+            <ul>
+                <li>Un elemento span que agrupara los iconos. En el definimos el tamaño general de los iconos</li>
+                <li>fa-stack2x , usado para el icono base (ej: Un circulo)</li>
+                <li>fa-stack1x , usado para el icono que se encontrara en el interior del otro</li>
+            </ul>
+            <p>Ejemplo:</p>
+            <div>
+                <span class="fa-stack fa-2x" id="ejemploStack">
             <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
             <i class="fa fa-flask fa-stack-1x" id="ejemploStackFrasco" aria-hidden="true"></i>
           </span>
-        </div>
+            </div>
 
-        <div class="ejemplo-Codigo">
-          <pre>
+            <div class="ejemplo-Codigo">
+                <pre>
   &lt;span class="fa-stack fa-2x" id="ejemploStack"&gt;
   &lt;i class="fa fa-circle fa-stack-2x" aria-hidden="true"&gt;&lt;/i&gt;
   &lt;i class="fa fa-flask fa-stack-1x" id="ejemploStackFrasco" aria-hidden="true"&gt;&lt;/i&gt;
   &lt;/span&gt;</pre>
-        </div>
+            </div>
 
-    <hr>
-  </section>
-    <section>
-    <h2>Listas</h2>
-    <p>De las listas podemos modificar:</p>
-    <ul>
-      <li>Iconos en listas no ordenadas</li>
-      <li>Comenizo de la numeracion en listas ordenadas</li>
-    </ul>
-      <h3>list-style-type</h3>
-      <p>Nos permite cambiar el icono de los elementos o elemento de una lista ordenada o no ordenada</p>
-        <h4>Lista no ordenada</h4>
-        <p>Ejemplo con cuadrados</p>
-        <ul id="ejemploListaSimbolosCuadrado">
-          <li>Elemento</li>
-          <li>Elemento</li>
-          <li>Elemento</li>
-        </ul>
-        <h4>Lista ordenada</h4>
+            <hr>
+        </section>
+        <section>
+            <h2>Listas</h2>
+            <p>De las listas podemos modificar:</p>
+            <ul>
+                <li>Iconos en listas no ordenadas</li>
+                <li>Comenizo de la numeracion en listas ordenadas</li>
+            </ul>
+            <h3>list-style-type</h3>
+            <p>Nos permite cambiar el icono de los elementos o elemento de una lista ordenada o no ordenada</p>
+            <h4>Lista no ordenada</h4>
+            <p>Ejemplo con cuadrados</p>
+            <ul id="ejemploListaSimbolosCuadrado">
+                <li>Elemento</li>
+                <li>Elemento</li>
+                <li>Elemento</li>
+            </ul>
+            <h4>Lista ordenada</h4>
 
-        <ol id="ejemploListaNumerosRomanos">
-          <li>Elemento</li>
-          <li>Elemento</li>
-          <li>Elemento</li>
-        </ol>
-    <hr>
-  </section>
-    <section>
-    <h2>Primer examen corregido</h2>
-    <p><a href="primerExamen.html">Aqui</a>puedes ver el primer examen corregido.</p>
-    <hr>
-    <h2>Float</h2>
-    <p>Sirve para posicionar y formatear contenido.</p>
-    <p>Puede tener los valores: </p>
-    <ul>
-      <li>left: El elemento flota a la izquierda</li>
-      <li>right: El elemento flota a la derecha</li>
-      <li>none: El elemento no flota</li>
-      <li>inherit: Hereda el valor de su padre</li>
-    </ul>
-    <div class="ejemplo" id="ejemploFloatRight">
-      <p><img src="img/debian.jpg" alt="Logo de Debian" id="logoDebian"/>Este es un ejemplo con float right, por lo que el elemento de la imagen deberia de estar a la derecha del parrafo.</p>
-      <p>Debian es un sistema operativo (S.O.) libre, para ordenadores.</p>
+            <ol id="ejemploListaNumerosRomanos">
+                <li>Elemento</li>
+                <li>Elemento</li>
+                <li>Elemento</li>
+            </ol>
+            <hr>
+        </section>
+        <section>
+            <h2>Float</h2>
+            <p>Sirve para posicionar y formatear contenido.</p>
+            <p>Puede tener los valores: </p>
+            <ul>
+                <li>left: El elemento flota a la izquierda</li>
+                <li>right: El elemento flota a la derecha</li>
+                <li>none: El elemento no flota</li>
+                <li>inherit: Hereda el valor de su padre</li>
+            </ul>
+            <div class="ejemplo" id="ejemploFloatRight">
+                <p><img src="img/debian.jpg" alt="Logo de Debian" id="logoDebian" />Este es un ejemplo con float right, por lo que el elemento de la imagen deberia de estar a la derecha del parrafo.</p>
+                <p>Debian es un sistema operativo (S.O.) libre, para ordenadores.</p>
 
+            </div>
+            <hr>
+        </section>
+        <section>
+            <h2>Posiciones</h2>
+            <p>Define la posición y como debe posicionarse</p>
+            <table class="tablaAtributos">
+                <tr>
+                    <th>Posición</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>static</td>
+                    <td>El elemento se posiciona con normalidad, siguiendo la corriente por defecto del elemento</td>
+                </tr>
+                <tr>
+                    <td>relative</td>
+                    <td>Se posiciona relativamente al la posicion por defecto (statica)</td>
+                </tr>
+                <tr>
+                    <td>fixed</td>
+                    <td>El elemento se posiciona segun el punto de vista, por lo que el elemento se mantiene en el mismo sitio</td>
+                </tr>
+                <tr>
+                    <td>absolute</td>
+                    <td>Se posiciona relativamente al elemento padre más cercano</td>
+                </tr>
+                <tr>
+                    <td>sticky</td>
+                    <td>El elemento se posiciona relativamente al scroll del usuario</td>
+                </tr>
+            </table>
+            <p>Mira los ejercicios a continuación en los que se aplican las diferentes posiciones</p>
+        </section>
+        <section>
+            <h2>Display</h2>
+            <p>Define la forma en la que se comportan los elementos</p>
+            <h3>block</h3>
+            <p>El elemento se comportara como un bloque, es decir, ocupara por defecto el 100% del ancho, y no podra haber más elementos en la misma linea que el.</p>
+            <h3>Inline</h3>
+            <p>La anchura del elemento solo ocupa lo esencial, permitiendo más elementos en la misma línea</p>
+            <h3>none</h3>
+            <p>Suele usarse para esconder elementos y mostrarlos</p>
+        </section>
     </div>
-    <hr>
-    </section>
-    <section>
-      <h2>Posiciones</h2>
-      <p>Define la posición y como debe posicionarse</p>
-      <table class="tablaAtributos">
-        <tr>
-          <th>Posición</th>
-          <th>Descripción</th>
-        </tr>
-        <tr>
-          <td>static</td>
-          <td>El elemento se posiciona con normalidad, siguiendo la corriente por defecto del elemento</td>
-        </tr>
-        <tr>
-          <td>relative</td>
-          <td>Se posiciona relativamente al la posicion por defecto (statica)</td>
-        </tr>
-        <tr>
-          <td>fixed</td>
-          <td>El elemento se posiciona segun el punto de vista, por lo que el elemento se mantiene en el mismo sitio</td>
-        </tr>
-        <tr>
-          <td>absolute</td>
-          <td>Se posiciona relativamente al elemento padre más cercano</td>
-        </tr>
-        <tr>
-          <td>sticky</td>
-          <td>El elemento se posiciona relativamente al scroll del usuario</td>
-        </tr>
-      </table>
-      <p>Mira los ejercicios a continuación en los que se aplican las diferentes posiciones</p>
-    </section>
-    <section>
-      <h2>Display</h2>
-      <p>Define la forma en la que se comportan los elementos</p>
-      <h3>block</h3>
-      <p>El elemento se comportara como un bloque, es decir, ocupara por defecto el 100% del ancho, y no podra haber más elementos en la misma linea que el.</p>
-      <h3>Inline</h3>
-      <p>La anchura del elemento solo ocupa lo esencial, permitiendo más elementos en la misma línea</p>
-      <h3>none</h3>
-      <p>Suele usarse para esconder elementos y mostrarlos</p>
-    </section>
-    <section>
-      <h2>Ejercicios 2</h2>
-      <h3>Ejercicio Software Libre</h3>
-      <a href="ejerciciosDivYPosiciones/softwareLibre.html">Ir al ejercicio resuelto.</a>
-      <h3>Ejercicio Leyes de Murphy</h3>
-      <a href="ejerciciosDivYPosiciones/murphy.html">Ir al ejercicio resuelto.</a>
-    </section>
-  </div>
-  <footer>
-    <iframe class="iframesWeb" name="footer" src="footer.html"></iframe>
-  </footer>
-  <a id="irAlTop" href="#menuIframe"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
-  <script src="js/nospam.js"></script>
-  <script src="js/indice.js"></script>
+    <footer>
+        <iframe class="iframesWeb" name="footer" src="footer.html"></iframe>
+    </footer>
+    <a id="irAlTop" href="#menuIframe"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+    <script src="js/nospam.js"></script>
+    <script src="js/indice.js"></script>
 </body>
 
 </html>

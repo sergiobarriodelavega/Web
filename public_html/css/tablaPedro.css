@@ -1,0 +1,100 @@
+/* Ejercicio tablas 1*/
+
+#ejercicioTablas {
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+}
+
+#ejercicioTablas td,
+#ejercicioTablas th {
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+}
+
+#ejercicioTablas td {
+    width: 160px;
+    height: 160px;
+}
+
+#tdPedro {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+#ejemploTablasPedro {
+    writing-mode: tb-rl;
+    font-size: 30px;
+    padding-left: 41px;
+}
+
+#ejemploTablasAdios {
+    vertical-align: bottom;
+    direction: rtl;
+    padding: 0 !important;
+}
+
+#ejemploTablasHola {
+    vertical-align: top;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#ejemploTablasCaracola {
+    background-color: green;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ejemploTablasR {
+    background-color: red;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ejemploTablasR p {
+    font-weight: bold;
+    text-decoration: underline;
+    transform: rotate(60deg);
+    font-size: 30px;
+    padding: 0;
+}
+
+#ejemploTablaHTML {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+#conjunto {
+    margin: 0;
+}
+
+#instagram {
+    font-size: 80px;
+    color: aquamarine;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+
+#basura {
+    font-size: 200px;
+    padding-left: 0px;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ejemploTablaLOL {
+    background-color: purple;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ejemploTablasAzul {
+    background-color: blue;
+}
+
+
+/*Fin ejercicio tablas 1*/

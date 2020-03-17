@@ -1,125 +1,117 @@
 <!DOCTYPE html>
 <html lang="es-es">
-  <head>
+
+<head>
     <title>HTML - Sergio Barrio</title>
-    <link rel="stylesheet" href="css.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/css.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
     <meta charset="UTF-8" />
-  </head>
-  <body>
+</head>
+
+<body>
     <nav>
-      <iframe class="iframesWeb" id="menuIframe" src="menu.html"></iframe>
+        <iframe class="iframesWeb" id="menuIframe" src="menu.html"></iframe>
     </nav>
     <h1 id="tituloHTML" class="titulo">
-      HTML <i class="fa fa-html5" aria-hidden="true"></i>
+        HTML <i class="fa fa-html5" aria-hidden="true"></i>
     </h1>
 
     <div class="contenidoBody">
-      <div id="indice">
-        <p><a id="mostrarIndice" onclick="mostrarIndice()">Indice <i id="mostrarIndiceIcono" class="fa fa-plus-square" aria-hidden="true"></i></a></p>
-        <div id="contenidoIndice"></div>
-      </div>
-      <p>
-        Lenguaje de marcas que se utiliza para el desarrollo de páginas web.
-        <abbr title="HyperText Markup Language">HTML</abbr> hace referencia a
-        HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.
-      </p>
-      <p>Los tags se definen entre los símbolos &lt;tag&gt;</p>
-      <hr />
-      <section>
-        <h2>!DOCTYPE html</h2>
-        <p>Indicamos que le fichero es de tipo HTML</p>
-        <hr />
-      </section>
-      <section>
-        <h2>&lt;!-- <span class="cursiva">Comentario --&gt;</span></h2>
+        <div id="indice">
+            <p><a id="mostrarIndice" onclick="mostrarIndice()">Indice <i id="mostrarIndiceIcono" class="fa fa-plus-square" aria-hidden="true"></i></a></p>
+            <div id="contenidoIndice"></div>
+        </div>
         <p>
-          Nos sirve para crear comentarios. Los comentarios también aparecen en
-          inspeccionar elemento de los navegadores, por lo que es importante
-          cuidar los comentarios que ponemos.
+            Lenguaje de marcas que se utiliza para el desarrollo de páginas web.
+            <abbr title="HyperText Markup Language">HTML</abbr> hace referencia a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.
         </p>
-        <!-- The cake is a lie-->
+        <p>Los tags se definen entre los símbolos &lt;tag&gt;</p>
         <hr />
-      </section>
-      <section>
-        <h2>html</h2>
-        <p>Sirve para indicar que el fichero es de tipo html.</p>
-        <hr />
-      </section>
-      <section>
-        <h2>head</h2>
-        <p>
-          En él definiremos parametros de la pagina web, como codificación,
-          título del a web etc.
-        </p>
-        <h3>Title</h3>
-        <p>Define el titulo de la pestaña</p>
-        <div class="ejemplo-Codigo">
-          <pre>
+        <section>
+            <h2>!DOCTYPE html</h2>
+            <p>Indicamos que le fichero es de tipo HTML</p>
+            <hr />
+        </section>
+        <section>
+            <h2>&lt;!-- <span class="cursiva">Comentario --&gt;</span></h2>
+            <p>
+                Nos sirve para crear comentarios. Los comentarios también aparecen en inspeccionar elemento de los navegadores, por lo que es importante cuidar los comentarios que ponemos.
+            </p>
+            <!-- The cake is a lie-->
+            <hr />
+        </section>
+        <section>
+            <h2>html</h2>
+            <p>Sirve para indicar que el fichero es de tipo html.</p>
+            <hr />
+        </section>
+        <section>
+            <h2>head</h2>
+            <p>
+                En él definiremos parametros de la pagina web, como codificación, título del a web etc.
+            </p>
+            <h3>Title</h3>
+            <p>Define el titulo de la pestaña</p>
+            <div class="ejemplo-Codigo">
+                <pre>
 &lt;head&gt;
   &lt;title&gt;Page Title&lt;/title&gt;
 &lt;/head&gt;
           </pre>
-        </div>
-        <h3>meta</h3>
-        <p>Se usa para especificar, entre muchas cosas, la codificación del texto, descripción de la página, palabras clave...</p>
-        <div class="ejemplo-Codigo">
-<pre>
+            </div>
+            <h3>meta</h3>
+            <p>Se usa para especificar, entre muchas cosas, la codificación del texto, descripción de la página, palabras clave...</p>
+            <div class="ejemplo-Codigo">
+                <pre>
 &lt;tmeta charset="UTF-8"&gt;
 </pre>
-        </div>
-        <hr />
-      </section>
-      <section>
-        <h2>body</h2>
-        <p>
-          Indicamos el comienzo del cuerpo de la página html. Este contiene
-          todos los elementos visuales de la web.
-        </p>
-        <hr />
-      </section>
-      <section>
-        <h2>h1 ... h6</h2>
-        <p>
-          Nos permite crear titulos. Indicaremos su nivel de importancia
-          mediante números. Estos van del 1 al 6, siendo 1 el más importante, y
-          del cual solo puede haber uno. A menor importancia, más pequeña es la
-          letra.
-        </p>
-        <div class="ejemplo">
-          <h1>Cabecera h1</h1>
-          <h2>Cabecera h2</h2>
-          <h3>Cabecera h3</h3>
-          <h4>Cabecera h4</h4>
-          <h5>Cabecera h5</h5>
-          <h6>Cabecera h6</h6>
-        </div>
-        <hr />
-      </section>
-      <section>
-        <h2>p</h2>
-        <p>Nos permite crear párrafos.</p>
-        <hr />
-      </section>
-      <section>
-        <h2>a</h2>
-        <p>Creamos enlaces. Tiene dos atributos:</p>
-        <ul>
-          <li>href: Indicamos cual es el enlace al que se quiere ir</li>
-          <li>
-            target: Indicamos si queremos que se abra el enlace en una nueva
-            pestaña (_blank).
-          </li>
-        </ul>
-        <h3>target</h3>
-        <p>Podemos hacer diferentes target</p>
-        <h4>_blank</h4>
-        <p>Abrimos el enlace en una nueva pestaña</p>
-        <div class="ejemplo">
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-            >Enlace que se abre en una nueva pestaña</a
+            </div>
+            <hr />
+        </section>
+        <section>
+            <h2>body</h2>
+            <p>
+                Indicamos el comienzo del cuerpo de la página html. Este contiene todos los elementos visuales de la web.
+            </p>
+            <hr />
+        </section>
+        <section>
+            <h2>h1 ... h6</h2>
+            <p>
+                Nos permite crear titulos. Indicaremos su nivel de importancia mediante números. Estos van del 1 al 6, siendo 1 el más importante, y del cual solo puede haber uno. A menor importancia, más pequeña es la letra.
+            </p>
+            <div class="ejemplo">
+                <h1>Cabecera h1</h1>
+                <h2>Cabecera h2</h2>
+                <h3>Cabecera h3</h3>
+                <h4>Cabecera h4</h4>
+                <h5>Cabecera h5</h5>
+                <h6>Cabecera h6</h6>
+            </div>
+            <hr />
+        </section>
+        <section>
+            <h2>p</h2>
+            <p>Nos permite crear párrafos.</p>
+            <hr />
+        </section>
+        <section>
+            <h2>a</h2>
+            <p>Creamos enlaces. Tiene dos atributos:</p>
+            <ul>
+                <li>href: Indicamos cual es el enlace al que se quiere ir</li>
+                <li>
+                    target: Indicamos si queremos que se abra el enlace en una nueva pestaña (_blank).
+                </li>
+            </ul>
+            <h3>target</h3>
+            <p>Podemos hacer diferentes target</p>
+            <h4>_blank</h4>
+            <p>Abrimos el enlace en una nueva pestaña</p>
+            <div class="ejemplo">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Enlace que se abre en una nueva pestaña</a
           >
         </div>
         <h4>_self</h4>
@@ -137,12 +129,11 @@
         <p>Abrimos el enlace en un frame</p>
         <div class="ejemplo">
           <a href="#" target="_blank">Enlace que se abre en un frame</a>
-        </div>
-        <h4>_top</h4>
-        <p>Abrimos el enlace en el cuerpo de la ventana</p>
-        <div class="ejemplo">
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-            >Enlace que se abre en en el cuerpo de la ventana</a
+            </div>
+            <h4>_top</h4>
+            <p>Abrimos el enlace en el cuerpo de la ventana</p>
+            <div class="ejemplo">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Enlace que se abre en en el cuerpo de la ventana</a
           >
         </div>
         <h3>Imagenes como enlaces</h3>
@@ -156,40 +147,30 @@
             title="Ir a la wikipedia de HTML5"
             ><img class="ejemploLogoHTML" alt="Logo HTML" src="./img/html_logo.png"
           /></a>
-        </div>
-        <p>
-          <a href="css.html#tituloLinks"
-            >Ir al CSS de enlaces <i class="fa fa-external-link"></i
+            </div>
+            <p>
+                <a href="css.html#tituloLinks">Ir al CSS de enlaces <i class="fa fa-external-link"></i
           ></a>
-        </p>
-        <hr />
-      </section>
-      <section>
-        <h2>img</h2>
-        <p>
-          Insertamos imágenes. Dentro de la etiqueta img tenemos dos atributos.
-          src, en el cual indicamos el origen de la imagen, y alt, en el que
-          establecemos un texto que aparecerá en la imagen al poner el cursor
-          encima. También tenemos los atributos width, y height, con los que
-          establecemos el tamaño de la imagen
-        </p>
-        <br />
-        <div class="ejemplo">
-          <img
-            src="./img/html_logo.png"
-            alt="Imagen con el logo de HTML"
-            class="ejemploLogoHTML"
-          />
-        </div>
-        <h3>map</h3>
-        <p>
-          Define el mapa de una imágen. De esta forma definimos areas en las que
-          se puede hacer click dentro de la imagen.
-        </p>
-        <p>
-          Información detallada en
-          <a href="https://www.w3schools.com/html/html_images_imagemap.asp"
-            >W3Schools</a
+            </p>
+            <hr />
+        </section>
+        <section>
+            <h2>img</h2>
+            <p>
+                Insertamos imágenes. Dentro de la etiqueta img tenemos dos atributos. src, en el cual indicamos el origen de la imagen, y alt, en el que establecemos un texto que aparecerá en la imagen al poner el cursor encima. También tenemos los atributos width, y
+                height, con los que establecemos el tamaño de la imagen
+            </p>
+            <br />
+            <div class="ejemplo">
+                <img src="./img/html_logo.png" alt="Imagen con el logo de HTML" class="ejemploLogoHTML" />
+            </div>
+            <h3>map</h3>
+            <p>
+                Define el mapa de una imágen. De esta forma definimos areas en las que se puede hacer click dentro de la imagen.
+            </p>
+            <p>
+                Información detallada en
+                <a href="https://www.w3schools.com/html/html_images_imagemap.asp">W3Schools</a
           >
         </p>
         <div class="ejemplo">
@@ -281,40 +262,38 @@
         </p>
         <p>
           <a href="css.html" title="Ir a la Web de CSS">Ir a CSS</a>
-        </p>
-        <div class="ejemplo">
-          <p id="ejemploStyle">Ejemplo</p>
-        </div>
-        <h3>lang</h3>
-        <p>Definimos en que idioma esta nuestra web</p>
-        <hr />
-      </section>
-      <section>
-        <h2 title="Title de un title">title</h2>
-        <p title="Si, esto es un title">
-          Nos sirve para definir texto que aparecerá encima del elemento si
-          dejamos el cursor.
-        </p>
-        <hr />
-      </section>
-      <section>
-        <h2>hr</h2>
-        <p>Inserta una linea:</p>
-        <hr />
-        <hr />
-      </section>
-      <section>
-        <h2>meta charset="UTF-8"</h2>
-        <p>Codificación para el texto</p>
-      </section>
-      <section>
-        <h2>pre</h2>
-        <p>
-          Contenedor de texto tal y como lo escribimos. <br />
-          Ejemplo de pre:
-        </p>
-        <div class="ejemplo-Codigo">
-          <pre>
+            </p>
+            <div class="ejemplo">
+                <p id="ejemploStyle">Ejemplo</p>
+            </div>
+            <h3>lang</h3>
+            <p>Definimos en que idioma esta nuestra web</p>
+            <hr />
+        </section>
+        <section>
+            <h2 title="Title de un title">title</h2>
+            <p title="Si, esto es un title">
+                Nos sirve para definir texto que aparecerá encima del elemento si dejamos el cursor.
+            </p>
+            <hr />
+        </section>
+        <section>
+            <h2>hr</h2>
+            <p>Inserta una linea:</p>
+            <hr />
+            <hr />
+        </section>
+        <section>
+            <h2>meta charset="UTF-8"</h2>
+            <p>Codificación para el texto</p>
+        </section>
+        <section>
+            <h2>pre</h2>
+            <p>
+                Contenedor de texto tal y como lo escribimos. <br /> Ejemplo de pre:
+            </p>
+            <div class="ejemplo-Codigo">
+                <pre>
   {
     "squadName": "Super hero squad",
     "homeTown": "Metro City",
@@ -334,56 +313,50 @@
       },
   }
           </pre>
-        </div>
+            </div>
 
-        <hr />
-      </section>
-      <section>
-        <h2>Formateo de texto</h2>
-        <p>
-          Se pueden meter dentro de otros elementos, y nos permiten dar formatos
-          predeterminados al texto.
-        </p>
-        <h3>b</h3>
-        <p>Ponemos en negrita el contenido que hay entre la <b>etiqueta</b></p>
-        <h3>strong</h3>
-        <p>
-          Texto importante. Se ve igual que el b pero sirve especialmente para
-          <strong>gente invidente, algoritmos de búsqueda...</strong>
-        </p>
-        <h3>i</h3>
-        <p>Texto en <i>italica</i></p>
-        <h3>em</h3>
-        <p>
-          Enfasis de texto. Se ve igual que i pero sirve
-          <em> especialmente </em> para gente invidente, algoritmos de
-          búsqueda...
-        </p>
-        <h3>mark</h3>
-        <p>
-          <mark>Marcamos texto</mark> como si lo hiciésemos con un marcador
-          amarillo
-        </p>
-        <h3>small</h3>
-        <p>Hacemos el texto más <small>pequeño</small></p>
-        <h3>del</h3>
-        <p>Tachamos texto <del> como este </del></p>
-        <h3>ins</h3>
-        <p>
-          Texto <ins>insertado</ins>. Al igual que en algunos de los casos
-          anteriores, sirve especialmente para gente invidente, algoritmos de
-          búsqueda...
-        </p>
-        <h3>sub</h3>
-        <p>Nos permite hacer <sub>subíndices</sub></p>
-        <h3>sup</h3>
-        <p>Nos permite elevar <sup>texto</sup></p>
-        <h3>q</h3>
-        <p>Nos permite crear citas</p>
-        <p>
-          Stephen hawking
-          <q
-            >Me he dado cuenta que incluso las personas que dicen que todo está
+            <hr />
+        </section>
+        <section>
+            <h2>Formateo de texto</h2>
+            <p>
+                Se pueden meter dentro de otros elementos, y nos permiten dar formatos predeterminados al texto.
+            </p>
+            <h3>b</h3>
+            <p>Ponemos en negrita el contenido que hay entre la <b>etiqueta</b></p>
+            <h3>strong</h3>
+            <p>
+                Texto importante. Se ve igual que el b pero sirve especialmente para
+                <strong>gente invidente, algoritmos de búsqueda...</strong>
+            </p>
+            <h3>i</h3>
+            <p>Texto en <i>italica</i></p>
+            <h3>em</h3>
+            <p>
+                Enfasis de texto. Se ve igual que i pero sirve
+                <em> especialmente </em> para gente invidente, algoritmos de búsqueda...
+            </p>
+            <h3>mark</h3>
+            <p>
+                <mark>Marcamos texto</mark> como si lo hiciésemos con un marcador amarillo
+            </p>
+            <h3>small</h3>
+            <p>Hacemos el texto más <small>pequeño</small></p>
+            <h3>del</h3>
+            <p>Tachamos texto <del> como este </del></p>
+            <h3>ins</h3>
+            <p>
+                Texto <ins>insertado</ins>. Al igual que en algunos de los casos anteriores, sirve especialmente para gente invidente, algoritmos de búsqueda...
+            </p>
+            <h3>sub</h3>
+            <p>Nos permite hacer <sub>subíndices</sub></p>
+            <h3>sup</h3>
+            <p>Nos permite elevar <sup>texto</sup></p>
+            <h3>q</h3>
+            <p>Nos permite crear citas</p>
+            <p>
+                Stephen hawking
+                <q>Me he dado cuenta que incluso las personas que dicen que todo está
             predestinado y que no podemos hacer nada para cambiar nuestro
             destino, siguen mirando a ambos lados antes de cruzar la calle.</q
           >
