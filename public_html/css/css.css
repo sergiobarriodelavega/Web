@@ -697,6 +697,9 @@ iframe[name="footer"] {
 
 .tituloEjercicios {
     text-align: center;
+    border: none;
+    font-size: 47px;
+    text-transform: uppercase;
 }
 
 .contenidoEjemplos {
