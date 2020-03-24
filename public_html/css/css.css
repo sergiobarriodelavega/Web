@@ -24,7 +24,7 @@ h6 {
 
 a {
     text-decoration: none;
-    margin-right: 4px;
+    /* margin-right: 4px; */
     color: #00a1ff;
 }
 
@@ -77,17 +77,17 @@ hr {
 }
 
 #tituloCSS {
-    background-image: url("../img/css_fondo.png");
+    background-image: url("../img/css_fondo.PNG");
     background-size: cover;
 }
 
 #tituloHTML {
-    background-image: url("../img/html_fondo.png");
+    background-image: url("../img/html_fondo.PNG");
     background-size: cover;
 }
 
 #tituloJS {
-    background-image: url("../img/js_fondo.png");
+    background-image: url("../img/js_fondo.PNG");
     background-size: cover;
 }
 
@@ -706,7 +706,7 @@ iframe[name="footer"] {
     text-align: center;
 }
 
-#contenidoEjemplos .vistaEjercicio:nth-child(odd) {
+.vistaEjercicio:nth-child(odd) {
     margin-right: 40px;
 }
 
@@ -748,13 +748,21 @@ iframe[name="footer"] {
     background-image: url("../img/pvStarWars.png");
 }
 
-#veStarWars {
-    background-image: url("../img/pvStarWars.png");
+#veInstagram {
+    background-image: url("../img/pvInstagram.png");
+}
+
+#veFormulario {
+    background-image: url("../img/pvFormulario.png");
 }
 
 #vePrimerExamen {
     background-image: url("../img/pvPrimerExamen.png");
 }
+
+
+
+
 
 
 /* FIN ejercicios PE*/

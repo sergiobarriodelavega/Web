@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tiny.cloud/1/bh784llm77d3z7dgq56ei4bf8nsqzd89jvdrekn7iy6josi6/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
+</head>
+
+
+<body>
+    <h1>Compar una guitarra</h1>
+    <p>Elige y personaliza tu guitarra como quieras:</p>
+    <form action="get" id="formGuitarra">
+        <fieldset>
+            <legend>Cuerpo de la guitarra</legend>
+            <input type="checkbox" id="solido" name="solido">
+            <label for="solido">Cuerpo solido</label><br>
+            <input type="checkbox" id="semisólido" name="semisólido">
+            <label for="semisólido">Cuerpo semisólido</label><br>
+            <input type="checkbox" id="hueco" name="hueco">
+            <label for="hueco">Cuerpo hueco</label><br>
+        </fieldset>
+        <fieldset id="colores">
+            <legend>Color</legend>
+            <div class="centradoColores">
+                <div class="color">
+                    <label for="3_Color_Sunburst"><img src="img/3-color-sunburst.png" alt=""></label>
+                    <input id="3_Color_Sunburst" type="radio" name="color">
+                </div>
+                <div class="color">
+                <label for="Cognac_Burst"><img src="img/cognac-burst.png" alt=""></label>
+                <input type="radio" name="color" id="Cognac_Burst">
+            </div>
+                <div class="color">
+                <label for="Antique_Burst"><img src="img/antique-burst-squier.png" alt=""></label>
+                <input type="radio" name="color" id="Antique_Burst">
+            </div>
+                <div class="color">
+                <label for="Nocaster_Blonde"><img src="img/nocaster-blonde.png" alt=""></label>
+                <input type="radio" name="color" id="Nocaster_Blonde">
+            </div>
+                <div class="color">
+                <label for="Sapphire_Blue_Transparent"><img src="img/sapphire-blue-transparent.png" alt=""></label><br>
+                <input type="radio" name="color" id="Sapphire_Blue_Transparent">           
+            </div>
+            </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Pastillas del puente</legend>
+            <div class="pastillas">
+                <div class="pastilla">
+                    <input type="radio" name="pastilla_puente" id="SingleCoilPuente">
+                    <label for="SingleCoilPuente">Single Coil</label>
+                </div>
+                <div class="pastilla">
+                    <input type="radio" name="pastilla_puente" id="HumbuckerPuente">
+                    <label for="HumbuckerPuente">Humbucker</label>
+                </div>
+                <div class="pastilla">
+                    <input type="radio" name="pastilla_puente" id="ActivasPuente">
+                    <label for="ActivasPuente">Activas</label>
+                </div>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Pastillas del mastil</legend>
+            <div class="pastillas">
+                <div class="pastilla">
+                    <input type="radio" name="pastilla_mastil" id="SingleCoilMastil">
+                    <label for="SingleCoilMastil">Single Coil</label>
+                </div>
+                <div class="pastilla">
+                    <input type="radio" name="pastilla_mastil" id="HumbuckerMastil">
+                    <label for="HumbuckerMastil">Humbucker</label>
+                </div>
+                <div class="pastilla">
+                    <input type="radio" name="pastilla_mastil" id="ActivasMastil">
+                    <label for="ActivasMastil">Activas</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Incluir en el paquete</legend>
+            <input type="checkbox" id="púas" name="púas">
+            <label for="púas">Púas (12 ud. 5€)</label><br>
+            <input type="checkbox" id="funda" name="funda">
+            <label for="funda">Funda (50€)</label><br>
+            <input type="checkbox" id="cuerdas" name="cuerdas">
+            <label for="cuerdas">Cuerdas (1 ud. 13€)</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div id="datospersonales">
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre"><br><br>
+                <label for="contraseña">Contraseña</label><br>
+                <input type="password" name="contraseña" id="contraseña"><br><br>
+                <label for="telefono">Teléfono</label><br>
+                <input type="tel" id="telefono" name="telefono"><br><br>
+                <label for="fechanac">Fecha de nacimiento</label><br>
+                <input type="date" id="fechanac" name="fechanac"><br><br>
+                
+            </div>
+        </fieldset>
+        <textarea id="editor"></textarea>
+        <input type="submit" id="enviar" value="Enviar">
+    </form>
+</body>
+<script src="js.js"></script>
+</html>

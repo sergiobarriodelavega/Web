@@ -1,0 +1,99 @@
+body {
+    font-family: 'Open Sans', serif;
+    background-color: #ecebe9;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 25px;
+    background-color: #f1f1f1;
+    margin-bottom: 35px;
+}
+
+input[name='color'] {
+    width: 150px;
+    margin: 0;
+}
+
+#formGuitarra {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.pastillas {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pastilla {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.pastillas .pastilla:nth-last-of-type() {
+    background-color: red;
+    color: red;
+}
+
+#datospersonales {
+    margin: 0 auto;
+    width: 40%;
+}
+
+#datospersonales label {
+    font-weight: 600;
+}
+
+#datospersonales input {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+#enviar {
+    font-size: 25px;
+    margin-top: 35px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 35px;
+    background-color: #3396ff;
+    border: 2px #2c85e4 solid;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s background-color ease;
+}
+#enviar:hover{
+    background-color: #4ba2ff;
+}
+.color{
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.centradoColores{
+    margin: 0 auto;
+    text-align: center;
+}
+
