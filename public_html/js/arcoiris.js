@@ -3,7 +3,6 @@ if (confirm("Esta página contiene cambios de luces rapidos. Si sufres de epilep
   document.body.style.visibility = "visible";
   var temporizador = setInterval(color, 0);
   var barra = document.getElementById("barraHSL");
-  console.log(barra);
   var valorHSL = 0;
   
   function color(){

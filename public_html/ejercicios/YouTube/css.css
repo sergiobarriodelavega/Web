@@ -1,0 +1,260 @@
+html{
+    background-color: #202020;
+}
+body{
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    height: 850px;
+    width: 1440px;
+    margin: 0;
+}
+nav{
+    height: 56px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.85);
+}
+nav *{
+    vertical-align: middle;
+}
+#contenedorMenu{
+    height: 100%;
+    vertical-align: top;
+    margin-left: 27px;
+    margin-right: 27px;
+}
+#contenedorMenu i{
+    vertical-align: middle;
+    font-size: 18px;
+}
+#contenedorLogo{
+    height: 100%;
+}
+#contenedorLogo *{
+    vertical-align: middle;
+}
+#logo{
+    margin-top: 19px;
+    margin-right: 214px;
+}
+#barraBusqueda{
+    background-color: white;
+}
+
+#barraBusqueda *{
+    display: inline-block;
+}
+
+#busqueda{
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #808080;
+    width: 553px;
+    height: 20px;
+    color: rgb(17, 17, 17);
+    border-right: none;
+    font-family: "Roboto";
+
+}
+
+#iconoBusqueda{
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+    font-size: 15px;
+    color: #818181;
+    padding: 7.5px  24px ;
+    vertical-align: top;
+    text-align: center;
+}
+#iconoBusqueda *{
+    vertical-align: middle;
+}
+
+#iconos{
+    margin-left: 211px;
+    color: #606060;
+}
+
+#iconos *{
+ padding-right: 30px;
+}
+
+
+#contenido{
+    padding: 25px;
+    height: 770px;
+}
+
+#video{
+    width: 966px;
+    display: inline-block;
+}
+#iframeVideo{
+    width: 100%;
+    height: 540px;
+}
+
+#infoVideo{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.85);
+    margin-top: -16px;
+    height: 107px;
+}
+
+#tags{
+    color: #2472e0;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+#tituloVideo{
+    font-size: 18px;
+    margin-top: 0;
+}
+
+#botonesVideo{
+    text-align: right;
+    float: right;
+}
+.botonLikeDislike{
+    border-bottom: 2px solid #606060;;
+}
+.botonVideo{
+    padding: 12px;
+    font-weight: 500;
+}
+.botonVideo *{
+    margin-right: 5px;
+}
+#cuenta *{
+    vertical-align: middle;
+}
+#usuario{
+    display: inline-block;
+    width: 70%;
+}
+#nombreUsuario{
+    font-size: 14px;
+    font-weight: 500;
+}
+#suscriptores{
+    font-size: 13px;
+    color: rgb(96, 96, 96);
+}
+#fotoPerfil{
+    border-radius: 50px;
+}
+#nombreYSuscriptores{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+#contenedorSuscribirse{
+    display: inline-block;
+    width: 30%;
+}
+#suscribirse{
+    background-color: #cc0000;
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius:2px;
+    font-size: 14px;
+    font-weight: 500;
+    float: right;
+    position: relative;
+    top: 50%;
+}
+
+#textoDescripcion{
+    margin-top: 13px;
+    margin-left: 63px;
+    font-size: 14px;
+}
+#textoDescripcion p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#sugeridos{
+    width: 378px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding: 23px;
+    padding-top: 0;
+}
+#siguiente {
+    margin-bottom: 15px;
+}
+#siguiente *{
+    vertical-align: middle;
+}
+#reproduccionAuto{
+    float: right;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(96, 96, 96);
+}
+
+.sugerencia{
+    height: 94px;
+    margin-bottom: 8px;
+}
+.sugerencia *{
+    vertical-align: top;
+}
+.contenedorFotoVideo{
+    width: 168px;
+    height: 94px;
+    float: left;
+}
+.fotoVideo{
+    width: 100%;
+    
+}
+.etiquetaLongitud{
+    float: right;
+    position: relative;
+    bottom: 22px;
+    right: 5px;
+    padding: 2px 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    font-weight: 500;
+}
+.bloqueTexto{
+    width: 53%;
+    margin-left: 2%;
+    display: inline-block;
+}
+.bloqueTexto p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.tituloVideo{
+    font-weight: 500;
+    font-size: 14px;
+}
+.canal{
+    font-size: 13px;
+    color: rgb(96, 96, 96);
+}
+.visualizaciones{
+    font-size: 13px;
+    color: rgb(96, 96, 96);
+}
+#primeraRecomendacion{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+a{
+    color: rgb(6, 95, 212);
+    text-decoration: none;
+}
+.iconoYT{
+    color: rgb(96, 96, 96);
+}

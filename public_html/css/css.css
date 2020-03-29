@@ -749,7 +749,7 @@ iframe[name="footer"] {
 }
 
 #veInstagram {
-    background-image: url("../img/pvInstagram.png");
+    background-image: url("../img/pvInsta.png");
 }
 
 #veFormulario {
@@ -760,7 +760,9 @@ iframe[name="footer"] {
     background-image: url("../img/pvPrimerExamen.png");
 }
 
-
+#veYT {
+    background-image: url("../img/pvYT.png");
+}
 
 
 

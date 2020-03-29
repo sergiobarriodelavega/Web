@@ -1,4 +1,15 @@
-#barra{
+#controlesHSL{
+  background-color: #222222;
+  border-radius: 50px;
+  padding: 10px 27px;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+#barraHSL{
   width: 100%;
-  padding: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+#controlesHSL:hover{
+  opacity: 1;
 }
