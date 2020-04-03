@@ -1,0 +1,67 @@
+body{
+    font-family: "mc";
+    background-image: url("img/fondo.png");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    width: 1273px;
+    height: 677px;
+}
+#contenido{
+    height: 100%;
+    width: 100%;
+}
+#titulo{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 104px;
+}
+#menu{
+    width: 600px;
+    position: relative;
+    left: 336.5px;
+}
+#menu div{
+    color: white;
+    text-shadow: 1px 2px #4e4e4e;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 47px;
+    background: url("img/btn.PNG");
+    background-size: 100% 100%;
+    vertical-align: middle;
+    image-rendering: crisp-edges;
+    user-select: none;
+    font-size: 25px;
+}
+#menu div:hover{
+    /* background-image: url("img/btn_azul.PNG"); */
+    cursor: pointer;
+    color: #e5ecaa;
+    border-color: white;
+}
+#menu div p{
+    margin-top: 9px;
+}
+#botonQ{
+    position: relative;
+    left: -20px;
+    display: inline-block;
+}
+
+.mitad{
+    width: 290px;
+    display: inline-block;
+}
+.mr{
+    margin-right: 12px;
+}
+
+
+@font-face {
+    font-family: mc;
+    src: url("mc.woff");
+}

@@ -60,10 +60,17 @@ nav *{
     border: 1px solid #d3d3d3;
     background-color: #f8f8f8;
     font-size: 15px;
-    color: #818181;
+    color: rgba(51, 51, 51,0.6);
     padding: 7.5px  24px ;
     vertical-align: top;
     text-align: center;
+    cursor: pointer;
+}
+#iconoBusqueda:hover{
+    color: rgba(51, 51, 51,1);
+    background-color: #f0f0f0;
+    border-color: #c6c6c6;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 #iconoBusqueda *{
     vertical-align: middle;
@@ -136,6 +143,7 @@ nav *{
 #nombreUsuario{
     font-size: 14px;
     font-weight: 500;
+    color: rgb(3, 3, 3);
 }
 #suscriptores{
     font-size: 13px;
@@ -167,13 +175,13 @@ nav *{
 }
 
 #textoDescripcion{
-    margin-top: 13px;
+    
     margin-left: 63px;
     font-size: 14px;
 }
 #textoDescripcion p{
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #sugeridos{
@@ -200,6 +208,8 @@ nav *{
 .sugerencia{
     height: 94px;
     margin-bottom: 8px;
+    display: block;
+    color: black;
 }
 .sugerencia *{
     vertical-align: top;

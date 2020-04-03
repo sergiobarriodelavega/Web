@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css.css">
+        <title></title>
+    </head>
+
+    <body>
+        <div id="contenido">
+            <p id="titulo">Menú del juego</p>
+            <div id="menu">
+                <div onclick="clickFX()"><p>Volver al juego</p></div>
+                <div onclick="clickFX()" class="mitad mr"><p>Progresos</p>
+                </div><div onclick="clickFX()" class="mitad"><p>Estadísticas</p></div>
+                <div onclick="clickFX()"><p>Abrir en LAN</p></div>
+            
+                    <div onclick="clickFX()" class="mitad mr"><p>Opciones...</p>
+                    </div><div class="mitad" onclick="clickFX()"><p>Opciones de mods...</p></div>
+            
+                
+            <div onclick="clickFX()"><p>Guardar y salir al menú principal</p></div>
+            </div>
+        </div>
+        
+        <audio src="click.ogg" type="audio/ogg" id="sonidoClick"></audio>
+    </body>
+
+</html>
+
+<script>
+    var clickSFX = document.getElementById("sonidoClick");
+    function clickFX(){
+        clickSFX.currentTime = 0;
+        clickSFX.play();
+    }
+</script>
