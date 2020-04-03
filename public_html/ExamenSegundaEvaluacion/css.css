@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Berlin Sans FB Demi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB Demi Bold'), url('BRLNSDB.woff') format('woff');
+}
+body{
+    font-family: "Arial Rounded MT Bold";
+    background-color: black;
+    color: white;
+    width: 1440px;
+}
+p{
+    font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Berlin Sans FB Demi Bold";
+    color: #ffb31a;
+
+}
+h2{
+    font-size: 20px;
+}
+#paddingIzq{
+    padding-left: 80px;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid gold;
+    padding: 30px;
+}
+fieldset{
+    margin-bottom: 20px;
+}
+#articuloPrimeraParte p{
+    margin-bottom: 80px;
+}
+#leyendaTerminos{
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+#titulo{
+    text-decoration: underline;
+    text-align: center;
+}
+#listadoVeaseTambien{
+    color: #ffb31a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.divSolapados{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    
+}
+#divS1{
+    background-color: teal;
+    
+    
+}
+.divSEncima:hover{
+    z-index: 2;
+}
+
+#divS2{
+    background-color: thistle;
+    left: -80px;
+    z-index: 1;
+    
+}
+
+
+#divS3{
+    background-color: yellowgreen;
+    left: -150px;
+    top: 108px;
+}
+
+#terminos{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+
+#tabla td, th{
+    border: 2px solid white;
+}
+#terminos{
+    background-color:#222222;
+}
+#tituloNav{
+    font-size: 25px;
+}
+#barraNav{
+    float: right;
+}
+#barraNav li{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222222;
+}
+#barraNav li:hover{
+    background-color: #3d3d3d;
+}
+#barraNav li a{
+    text-decoration: none;
+    color: white;
+}
